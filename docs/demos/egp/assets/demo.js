@@ -5,6 +5,11 @@
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const text = (id, value) => { if ($id(id)) $id(id).textContent = value; };
   const date = value => String(value || '').slice(0, 10);
+  const displayDate = value => /^\d{4}-\d{2}-\d{2}/.test(value || '') ? new Date(`${date(value)}T12:00:00Z`).toLocaleDateString('th-TH',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Bangkok'}) : '—';
+  const publicDocumentUrl = value => {
+    try { const url = new URL(value); return ['http:','https:'].includes(url.protocol) && ['process.gprocurement.go.th','process3.gprocurement.go.th','process5.gprocurement.go.th'].includes(url.hostname) && !url.username && !url.password && !url.port ? url.href : ''; } catch { return ''; }
+  };
+  const documentButton = (value,label,kind = 'info') => { const url = publicDocumentUrl(value); return url ? `<a class="btn btn-${kind} btn-sm" href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(label)} ↗</a>` : ''; };
   const key = 'procureflow-demo-v1';
   const read = () => { try { return JSON.parse(sessionStorage.getItem(key) || 'null'); } catch { return null; } };
   const save = () => { try { sessionStorage.setItem(key, JSON.stringify(state)); } catch { /* Still works in memory. */ } };
@@ -62,7 +67,7 @@
         const size = Number($id('announcementPageSize').value);
         const totalPages = Math.max(1,Math.ceil(filtered.length / size));
         currentPage = Math.min(currentPage,totalPages);
-        document.querySelector('#announce-table tbody').innerHTML = filtered.slice((currentPage-1)*size,currentPage*size).map(a => `<tr><td>${a.announce_id}</td><td>${escape(a.type_name)}</td><td class="department-sub">${escape(a.department_sub_name)}</td><td>${escape(a.method_name)}</td><td class="announce-title"><strong>${escape(a.title)}</strong><div class="text-muted small">${escape(a.projectId)}</div></td><td>${escape(date(a.pubDate))}</td><td><span class="text-muted">ตัวอย่าง</span></td><td><button class="btn btn-sm btn-outline-primary mb-1" data-edit="${a.announce_id}">รายละเอียด / แก้ไข</button> <button class="btn btn-sm btn-outline-danger" data-delete="${a.announce_id}">ลบ</button></td></tr>`).join('') || '<tr><td colspan="8" class="text-center py-4">ไม่พบประกาศที่ตรงกับเงื่อนไข</td></tr>';
+        document.querySelector('#announce-table tbody').innerHTML = filtered.slice((currentPage-1)*size,currentPage*size).map(a => `<tr><td>${a.announce_id}</td><td>${escape(a.type_name)}</td><td class="department-sub">${escape(a.department_sub_name)}</td><td>${escape(a.method_name)}</td><td class="announce-title"><strong>${escape(a.title)}</strong><div class="text-muted small announcement-description">${escape(a.description)}</div>${a.contract_link ? `<div class="mt-2">${documentButton(a.contract_link,'สาระสำคัญของสัญญา','success')}</div>` : ''}</td><td>${escape(displayDate(a.pubDate))}</td><td>${documentButton(a.link,'เปิด') || '—'}</td><td><button class="btn btn-sm btn-outline-primary mb-1" data-edit="${a.announce_id}">รายละเอียด / แก้ไข</button> <button class="btn btn-sm btn-outline-danger" data-delete="${a.announce_id}">ลบ</button></td></tr>`).join('') || '<tr><td colspan="8" class="text-center py-4">ไม่พบประกาศที่ตรงกับเงื่อนไข</td></tr>';
         text('announcementSummary',`${filtered.length} รายการ · หน้า ${currentPage} / ${totalPages} · ในเดโม ${state.announcements.length} / 100 รายการ`);
         $id('announcementPrevious').disabled = currentPage === 1;
         $id('announcementNext').disabled = currentPage === totalPages;
@@ -71,10 +76,12 @@
         const record = state.announcements.find(a => a.announce_id === id);
         if (!record && state.announcements.length >= 100) { message('pageStatus','เดโมจำกัด 100 ประกาศ กรุณาลบรายการตัวอย่างหนึ่งรายการก่อนเพิ่ม หรือเลือกแก้ไขรายการที่มีอยู่'); return; }
         $id('announceForm').reset();
-        for (const [field, target] of Object.entries({announce_id:'announceId',anounceType:'announceType',methodId:'methodId',title:'announceTitle',description:'description',pubDate:'pubDate',projectId:'projectId'})) {
+        $id('documentLink').setCustomValidity('');
+        for (const [field, target] of Object.entries({announce_id:'announceId',anounceType:'announceType',methodId:'methodId',title:'announceTitle',description:'description',pubDate:'pubDate',projectId:'projectId',link:'documentLink'})) {
           if (record) $id(target).value = field === 'pubDate' ? date(record[field]) : record[field] ?? '';
         }
         if (!record) $id('pubDate').value = date(announcements[0].pubDate);
+        $id('sourceDocumentLinks').innerHTML = record ? [documentButton(record.link,'เปิดเอกสารประกาศ'),documentButton(record.contract_link,'สาระสำคัญของสัญญา','success')].filter(Boolean).join(' ') : '';
         text('announceModalTitle',record ? `รายละเอียดประกาศ ${record.projectId}` : 'เพิ่มประกาศตัวอย่าง');
         modal('announceModal');
       }
@@ -96,9 +103,13 @@
         const nextId = existing ? id : Math.max(0,...state.announcements.map(a => a.announce_id)) + 1;
         const record = { announce_id:nextId,anounceType:$id('announceType').value,type_name:$id('announceType').selectedOptions[0].textContent,methodId:$id('methodId').value,method_name:$id('methodId').selectedOptions[0].textContent,title:$id('announceTitle').value.trim(),description:$id('description').value.trim(),pubDate:$id('pubDate').value,projectId:$id('projectId').value.trim() || `DEMO-${String(nextId).padStart(4,'0')}`,department_sub_name:existing?.department_sub_name || 'หน่วยงานตัวอย่างใหม่',link:'' };
         if (!record.title || !record.description) { $id('announceTitle').focus(); return; }
+        record.link = publicDocumentUrl($id('documentLink').value);
+        if ($id('documentLink').value.trim() && !record.link) { $id('documentLink').setCustomValidity('ใช้ลิงก์เอกสารจากเว็บไซต์ E-GP เท่านั้น'); $id('documentLink').reportValidity(); return; }
+        record.contract_link = existing?.projectId === record.projectId && existing?.anounceType === record.anounceType ? existing.contract_link || '' : '';
         if (existing) Object.assign(existing,record); else state.announcements.push(record);
         save(); render(); window.jQuery('#announceModal').modal('hide'); message('pageStatus','บันทึกข้อมูลในแท็บนี้แล้ว','success');
       });
+      $id('documentLink').addEventListener('input', () => $id('documentLink').setCustomValidity(''));
       for (const id of ['announceTypeFilter','departmentSubFilter','announcementPageSize']) $id(id).addEventListener('change', () => { currentPage = 1; render(); });
       $id('announcementSearch').addEventListener('input', () => { currentPage = 1; render(); });
       $id('announcementPrevious').addEventListener('click', () => { currentPage--; render(); });

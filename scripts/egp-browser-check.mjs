@@ -2,11 +2,12 @@ import {chromium,expect} from '@playwright/test';
 import express from 'express';
 import {once} from 'node:events';
 import {resolve} from 'node:path';
-import {mkdirSync} from 'node:fs';
+import {mkdirSync,readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {openStore} from '../server/store.mjs';
 import {createApp} from '../server/app.mjs';
 const db=openStore(':memory:');
+const sourceSamples=JSON.parse(readFileSync('docs/demos/egp/data/announcements.json','utf8'));
 const backend=await createApp({db,secret:'egp-browser-check'.repeat(8),appUrl:'http://127.0.0.1:4183',sendCode:async()=>{}});
 const server=backend.listen(4183,'127.0.0.1');await once(server,'listening');
 const app=express();app.get('/api/portfolio',(_,res)=>res.sendFile(resolve('docs/data/portfolio.json')));app.use('/myportal',express.static(resolve('docs')));
@@ -41,8 +42,17 @@ try {
   await page.locator('#announceTypeFilter').selectOption('');
   await page.locator('#announcementNext').click();await expect(page.locator('#announcementSummary')).toContainText('หน้า 2 / 10');
   await page.locator('#announcementSearch').fill('zzzz-no-match');await expect(page.locator('#announce-table tbody')).toContainText('ไม่พบประกาศ');
-  await page.locator('#announcementSearch').fill('DEMO-0001');await expect(page.locator('[data-edit]')).toHaveCount(1);
+  const first=sourceSamples[0];
+  await page.locator('#announcementSearch').fill(first.projectId);await expect(page.locator('[data-edit]')).toHaveCount(1);
+  await expect(page.locator('.announcement-description')).toHaveText(first.description);
+  await expect(page.locator('#announce-table a').filter({hasText:'เปิด'})).toHaveAttribute('href',first.link);
+  await expect(page.locator('#announce-table a').filter({hasText:'สาระสำคัญของสัญญา'})).toHaveAttribute('href',first.contract_link);
   await page.locator('[data-edit]').click();await expect(page.locator('#announceModal')).toBeVisible();
+  await expect(page.locator('#description')).toHaveValue(first.description);
+  await expect(page.locator('#projectId')).toHaveValue(first.projectId);
+  await expect(page.locator('#documentLink')).toHaveValue(first.link);
+  await expect(page.locator('#sourceDocumentLinks a')).toHaveCount(2);
+  await page.screenshot({path:'.artifacts/egp-source-details.png',fullPage:true});
   await page.locator('#announceTitle').fill('ทดสอบแก้ไข <img src=x onerror=alert(1)>');await page.locator('#saveBtn').click();await expect(page.locator('#announceModal')).toBeHidden();
   await expect(page.locator('#announce-table tbody')).toContainText('<img src=x onerror=alert(1)>');assert.equal(await page.locator('#announce-table img').count(),0);
   await page.reload();await expect(page.locator('#announce-table tbody')).toContainText('ทดสอบแก้ไข');
@@ -51,6 +61,11 @@ try {
   await page.locator('#addNewBtn').click();await page.locator('#announceTitle').fill('ประกาศเพิ่มใหม่');await page.locator('#description').fill('รายละเอียดทดสอบ');await page.locator('#saveBtn').click();await expect(page.locator('#announcementSummary')).toContainText('100 / 100');
   await page.locator('#resetDemo').click();await expect(page.locator('#announce-table tbody')).not.toContainText('ทดสอบแก้ไข');
   await page.locator('#announcementPageSize').selectOption('100');await expect(page.locator('#announce-table tbody tr')).toHaveCount(100);
+  for(const row of sourceSamples){
+    const tr=page.locator(`tr:has([data-edit="${row.announce_id}"])`);
+    await expect(tr.locator('.announcement-description')).toHaveText(row.description);
+    assert.equal(await tr.locator('a').count(),Number(Boolean(row.link))+Number(Boolean(row.contract_link)));
+  }
   await page.goto(`${base}sync.html`);await expect(page.locator('#autoQueueMeta')).toContainText('10 queue');
   await page.locator('#automaticQueueStatus').selectOption('failed');await expect(page.locator('#automaticQueueBody')).toContainText('ไม่มีคิว');
   await page.locator('#automaticQueueStatus').selectOption('');await page.locator('[data-queue-detail]').first().click();await expect(page.locator('#automaticQueueDetailSource')).toContainText('queue_id');await page.locator('#automaticQueueDetailModal [data-dismiss]').last().click();

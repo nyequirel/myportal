@@ -6,11 +6,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างซ่อมชุดกำจัดไอกรด (สำหรับเครื่องย่อยไนโตรเจน) โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0001, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099155725, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0001",
+    "projectId": "69099155725",
     "department_sub_name": "หน่วยงานตัวอย่าง 01",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099155725&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18smu8IW%252F2Dn68D31ZMZQW1x0joKcuszzfJnOrjGEFVhwbY5dugRAYO"
   },
   {
     "announce_id": 2,
@@ -19,11 +20,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อสารเคมีและวัสดุอุปกรณ์วิทยาศาสตร์ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0002, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099167665, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0002",
+    "projectId": "69099167665",
     "department_sub_name": "หน่วยงานตัวอย่าง 01",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099167665&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252FwYOUX71o%252FRhWrjzzUsZ8Gb6%252F02BQgTmCI%252FJhl1pzH0MKMsY3kNrgX"
   },
   {
     "announce_id": 3,
@@ -32,11 +34,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างซ่อมเครื่องสกัดน้ำมันและไขมัน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0003, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099159565, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0003",
+    "projectId": "69099159565",
     "department_sub_name": "หน่วยงานตัวอย่าง 01",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099159565&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX19Lzf6WkPK%252B3q21fqJ3oRMz4fb3H4g0niH0koEa34XlCLK9pU0M3KiM"
   },
   {
     "announce_id": 4,
@@ -44,12 +47,13 @@
     "type_name": "ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
-    "title": "จ้างซ่อมรถยนต์ราชการ ทะเบียนตัวอย่าง โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0004, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "title": "จ้างซ่อมรถยนต์ราชการ หมายเลขทะเบียน กว 3261 อุดรธานี โดยวิธีเฉพาะเจาะจง",
+    "description": "69089578959, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0004",
+    "projectId": "69089578959",
     "department_sub_name": "หน่วยงานตัวอย่าง 02",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089578959&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX191wiSq%252BnWboSTaZGcRmHx6zPDCg7dEvxvgXaYlIMQxBM1CxYXQMHJ2"
   },
   {
     "announce_id": 5,
@@ -58,11 +62,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างซ่อมเครื่องตรวจวัดคุณภาพน้ำภาคสนาม โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0005, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089580458, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0005",
+    "projectId": "69089580458",
     "department_sub_name": "หน่วยงานตัวอย่าง 02",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089580458&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18odAcUF3itmHgE8hANjklhbVI5eZqnzkOWIsPNtPcJZBFshUgoliHv"
   },
   {
     "announce_id": 6,
@@ -70,12 +75,13 @@
     "type_name": "ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
-    "title": "จ้างซ่อมบำรุงรถยนต์ราชการ ทะเบียนตัวอย่าง โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0006, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "title": "จ้างซ่อมบำรุงรถยนต์ราชการ หมายเลขทะเบียน นค 7523 นครสวรรค์ โดยวิธีเฉพาะเจาะจง",
+    "description": "69089739871, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0006",
+    "projectId": "69089739871",
     "department_sub_name": "หน่วยงานตัวอย่าง 03",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089739871&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 7,
@@ -84,11 +90,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างตรวจวิเคราะห์คุณภาพน้ำทิ้งและน้ำผิวดิน  โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0007, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69069566248, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0007",
+    "projectId": "69069566248",
     "department_sub_name": "หน่วยงานตัวอย่าง 04",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69069566248&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 8,
@@ -96,12 +103,13 @@
     "type_name": "ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
-    "title": "จ้างซ่อมแซมและบำรุงรักษารถยนต์ราชการ ทะเบียนตัวอย่าง จำนวน ๑ งาน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0008, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "title": "จ้างซ่อมแซมและบำรุงรักษารถยนต์ราชการ หมายเลขทะเบียน จอ 940 เชียงใหม่ จำนวน ๑ งาน โดยวิธีเฉพาะเจาะจง",
+    "description": "69099161886, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0008",
+    "projectId": "69099161886",
     "department_sub_name": "หน่วยงานตัวอย่าง 05",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099161886&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252BF%252Fs9%252FStSGn3FtUGxG7rK81%252BFb5HWQ7IlPoO0K9C1V4bbFkJN2sGbD"
   },
   {
     "announce_id": 9,
@@ -110,11 +118,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้ออุปกรณ์เก็บตัวอย่างภาคสนาม จำนวน 11 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0009, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099026418, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0009",
+    "projectId": "69099026418",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099026418&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=2",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18yJyHF7Gpt9R%252BQeoOMPNIImQnihMJFTN6NcRNbVFYtT2MWviOdXfEr"
   },
   {
     "announce_id": 10,
@@ -123,11 +132,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อวัสดุ จำนวน 14 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0010, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099107074, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0010",
+    "projectId": "69099107074",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099107074&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18Xren6N2BIK9z1J6ISFGHkgfgECN6Ont5BWg84A0dPQBrJe3TiEBlk"
   },
   {
     "announce_id": 11,
@@ -136,11 +146,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อวัสดุคอมพิวเตอร์ จำนวน 2 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0011, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099045913, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0011",
+    "projectId": "69099045913",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099045913&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18xUxWJNTXu0A33ogZgjDavDAfsq4JnS5HpUJQhinPsT8ovmbmn5qdC"
   },
   {
     "announce_id": 12,
@@ -149,11 +160,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้ออุปกรณ์เก็บตัวอย่างภาคสนาม จำนวน 11 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0012, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099026418, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0012",
+    "projectId": "69099026418",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099026418&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252F2h8z91utQho8icAMrhz7S6%252BMIkz6Cy8Slx8yd5qzcmUmZKdX1L6AU"
   },
   {
     "announce_id": 13,
@@ -162,11 +174,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อวัสดุวิทยาศาสตร์ จำนวน 7 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0013, e-bidding, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089456223, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0013",
+    "projectId": "69089456223",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=be279ae0-5c4c-4bfd-be0b-26ac59db86b8",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18MSZZV%252FilBNifaxdgaK3ITREdP95caUitE8odo9WCTM2%252FyB4ZxmxVm"
   },
   {
     "announce_id": 14,
@@ -175,11 +188,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0014, e-bidding, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69079296525, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-07",
-    "projectId": "DEMO-0014",
+    "projectId": "69079296525",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=abda3052-ccb0-41b5-8ee2-b268a47e673e",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252BmgoChU8lvPtlHe1W224P5XtsF%252Br6EWnsTiyiyvxy7%252BJZh7UqwD0y5"
   },
   {
     "announce_id": 15,
@@ -188,11 +202,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อไส้กรองของเครื่องกรองน้ำประปา โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0015, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099110217, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0015",
+    "projectId": "69099110217",
     "department_sub_name": "หน่วยงานตัวอย่าง 07",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099110217&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18J6E%252FoPge9t%252BFMsuT3FcxZT3yNUzLVw2hWYDTIiypngL1ClkfWj0up"
   },
   {
     "announce_id": 16,
@@ -201,11 +216,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อไส้กรองของเครื่องกรองน้ำประปา โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0016, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099110217, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0016",
+    "projectId": "69099110217",
     "department_sub_name": "หน่วยงานตัวอย่าง 07",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099110217&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=2",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252FOo1wAGsMFT2rHt249j7KbD1D19XUimD7REqgSiUjAXp94UQwI%252Ffy9"
   },
   {
     "announce_id": 17,
@@ -214,11 +230,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างเหมาบริการทำตราสัญลักษณ์หน่วยงานตัวอย่าง โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0017, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099111284, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0017",
+    "projectId": "69099111284",
     "department_sub_name": "หน่วยงานตัวอย่าง 07",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099111284&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252FLIf2YlG8m0a2sFOZlS0mnQDwzvcaxR18bJcPZtZsNoGJ2isR%252FLvhV"
   },
   {
     "announce_id": 18,
@@ -227,11 +244,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อวัสดุจำนวน 36 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0018, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099131080, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0018",
+    "projectId": "69099131080",
     "department_sub_name": "หน่วยงานตัวอย่าง 08",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099131080&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX19Q4gZ%252FXkNb4DHzpGzIv3S7GS2dJeEa7gu6q6maRL6sESw4xoNFIMdw"
   },
   {
     "announce_id": 19,
@@ -240,11 +258,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างสอบเทียบเครื่องตรวจวัดเสียง พร้อมอุปกรณ์เครื่องกำเนิดสัญญาณเสียงอ้างอิง โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0019, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099122324, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0019",
+    "projectId": "69099122324",
     "department_sub_name": "หน่วยงานตัวอย่าง 08",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099122324&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX19UfZSdAfRa8bUC2eCptInZvJdMv3UEv9YKUHy3%252B8ze6%252Fj4UTcXI9gP"
   },
   {
     "announce_id": 20,
@@ -252,12 +271,13 @@
     "type_name": "ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
-    "title": "จ้างซ่อมแซมบำรุงรักษายานพาหนะรถยนต์ราชการ ทะเบียนตัวอย่าง โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0020, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "title": "จ้างซ่อมแซมบำรุงรักษายานพาหนะรถยนต์ราชการ หมายเลขทะเบียน ขต 1743 โดยวิธีเฉพาะเจาะจง",
+    "description": "69099157700, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0020",
+    "projectId": "69099157700",
     "department_sub_name": "หน่วยงานตัวอย่าง 04",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099157700&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18%252BuIWBArMmIVV%252F4oBHfVgwrUn%252BmtKNUXCsVz77ICXZjUvgOqpdW9fI"
   },
   {
     "announce_id": 21,
@@ -266,11 +286,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างจัดทำสลากสติ๊กเกอร์สำหรับขวดเก็บตัวอย่างน้ำ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0021, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099158509, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0021",
+    "projectId": "69099158509",
     "department_sub_name": "หน่วยงานตัวอย่าง 04",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099158509&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX1%252FUD3DGGxHMKYIVKiJK%252BTJOZ6GX40ep8E1F%252FISivnaa5QDuLqyf3Ipz"
   },
   {
     "announce_id": 22,
@@ -279,11 +300,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างรถตู้ปรับอากาศ พร้อมคนขับ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0022, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69099056770, เฉพาะเจาะจง, ประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0022",
+    "projectId": "69099056770",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69099056770&templateType=W2&temp_Announ=A&temp_itemNo=0&seqNo=1",
+    "contract_link": "https://process5.gprocurement.go.th/egp-agpc01-web/announcement/contract/U2FsdGVkX18vQp4TC1ohdzZzZPd%252FvM2iD9XCMQORFTcO4I4ofmQjtZVI6EieNeHG"
   },
   {
     "announce_id": 23,
@@ -292,11 +314,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างทำของที่ระลึก (จี้ทองพญาครุฑ) จำนวน 22 ชิ้น โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0023, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089392904, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-04",
-    "projectId": "DEMO-0023",
+    "projectId": "69089392904",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089392904&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 24,
@@ -305,11 +328,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างตรวจเช็คและซ่อมบำรุงรถยนต์ จำนวน 1 คัน  โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0024, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089707092, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-03",
-    "projectId": "DEMO-0024",
+    "projectId": "69089707092",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089707092&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 25,
@@ -318,11 +342,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อวัสดุคอมพิวเตอร์ จำนวน 17 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0025, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089614784, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-03",
-    "projectId": "DEMO-0025",
+    "projectId": "69089614784",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089614784&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 26,
@@ -331,11 +356,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "เช่าใช้ซอฟต์แวร์ปัญญาประดิษฐ์ (Artificial Intelligence AI) เพื่อสนับสนุนการพัฒนาระบบสารสนเทศและเพิ่มประสิทธิภาพการปฏิบัติงาน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0026, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089097734, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-09-03",
-    "projectId": "DEMO-0026",
+    "projectId": "69089097734",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089097734&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 27,
@@ -344,11 +370,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างดูดตะกอนปนเปื้อนหน้าฝายดักตะกอน และขนส่งไปฝังกลบในหลุมฝังกลบแบบปลอดภัย บริเวณลำห้วยคลิตี้ จังหวัดกาญจนบุรี",
-    "description": "DEMO-0027, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080033851, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-26",
-    "projectId": "DEMO-0027",
+    "projectId": "P69080033851",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080024489&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 28,
@@ -357,11 +384,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "เช่าที่ดินเพื่อใช้เป็นที่ตั้งอาคารหน่วยงานตัวอย่าง",
-    "description": "DEMO-0028, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080033929, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-26",
-    "projectId": "DEMO-0028",
+    "projectId": "P69080033929",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080024489&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 29,
@@ -370,11 +398,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างให้บริการรักษาความปลอดภัยอาคารหน่วยงานตัวอย่าง (4 แห่ง)",
-    "description": "DEMO-0029, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080033940, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-26",
-    "projectId": "DEMO-0029",
+    "projectId": "P69080033940",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080024489&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 30,
@@ -383,11 +412,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างเหมาทำความสะอาดอาคารหน่วยงานตัวอย่าง",
-    "description": "DEMO-0030, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080033943, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-26",
-    "projectId": "DEMO-0030",
+    "projectId": "P69080033943",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080024489&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 31,
@@ -396,11 +426,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างดูแลระบบอาคารหน่วยงานตัวอย่าง",
-    "description": "DEMO-0031, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080033947, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-26",
-    "projectId": "DEMO-0031",
+    "projectId": "P69080033947",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080024489&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 32,
@@ -409,11 +440,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อวัสดุสำนักงานและวัสดุคอมพิวเตอร์  4 รายการ   จำนวน 1 งาน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0032, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69079516719, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-25",
-    "projectId": "DEMO-0032",
+    "projectId": "69079516719",
     "department_sub_name": "หน่วยงานตัวอย่าง 17",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69079516719&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 33,
@@ -422,11 +454,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อวัสดุวิทยาศาสตร์ จำนวน 7 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0033, e-bidding, ประกาศเชิญชวน",
+    "description": "69089456223, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-08-25",
-    "projectId": "DEMO-0033",
+    "projectId": "69089456223",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=7f1d07b0-32c1-4ccb-89bf-ebb11b5dc115",
+    "contract_link": ""
   },
   {
     "announce_id": 34,
@@ -435,11 +468,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อวัสดุวิทยาศาสตร์ จำนวน 7 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0034, e-bidding, ประกาศราคากลาง",
+    "description": "69089456223, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-08-25",
-    "projectId": "DEMO-0034",
+    "projectId": "69089456223",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=75f5f92f6e75403fa5e32d51a66f63a2",
+    "contract_link": ""
   },
   {
     "announce_id": 35,
@@ -448,11 +482,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างทำสื่อประชาสัมพันธ์บทบาทภารกิจและสร้างความรู้ความเข้าในการดำเนินงานด้านสิ่งแวดล้อม โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0035, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089527180, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-24",
-    "projectId": "DEMO-0035",
+    "projectId": "69089527180",
     "department_sub_name": "หน่วยงานตัวอย่าง 12",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089527180&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 36,
@@ -461,11 +496,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างถ่ายเอกสารพร้อมเข้าเล่ม จำนวน 50 เล่ม โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0036, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089450656, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-24",
-    "projectId": "DEMO-0036",
+    "projectId": "69089450656",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089450656&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 37,
@@ -474,11 +510,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "อากาศยานไร้คนขับ (Drone) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
-    "description": "DEMO-0037, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025182, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0037",
+    "projectId": "P69080025182",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 38,
@@ -487,11 +524,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "เครื่องวัดอัตราการไหลสำหรับเปรียบเทียบเครื่องตรวจวัดฝุ่นละอองในบรรยากาศ หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
-    "description": "DEMO-0038, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025192, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0038",
+    "projectId": "P69080025192",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 39,
@@ -500,11 +538,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "ชุดโปรแหน่วยงานตัวอย่าง (สำหรับเครื่องคอมพิวเตอร์ฯ 1 เครื่อง) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
-    "description": "DEMO-0039, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025196, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0039",
+    "projectId": "P69080025196",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 40,
@@ -513,11 +552,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "อุปกรณ์ป้องกันเครือข่าย (Next Generation Firewall) แบบที่ 2 หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
-    "description": "DEMO-0040, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025199, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0040",
+    "projectId": "P69080025199",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 41,
@@ -526,11 +566,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "เช่าใช้บริการอินเทอร์เน็ตและวงจรสื่อสารส่วนกลางและหน่วยงานตัวอย่าง - 16",
-    "description": "DEMO-0041, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025201, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0041",
+    "projectId": "P69080025201",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 42,
@@ -539,11 +580,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างเหมาดูแลและบำรุงรักษาระบบเครือข่ายคอมพิวเตอร์",
-    "description": "DEMO-0042, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025217, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0042",
+    "projectId": "P69080025217",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 43,
@@ -552,11 +594,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างเหมาดูแลและบำรุงรักษาระบบสารสนเทศภูมิศาสตร์ (GIS)",
-    "description": "DEMO-0043, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025224, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0043",
+    "projectId": "P69080025224",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 44,
@@ -565,11 +608,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "โครงการปรับปรุงและเพิ่มประสิทธิภาพระบบไฟฟ้า และระบบไฟฟ้าสำรอง อาคารสำนักงาน และอาคารปฏิบัติการ หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
-    "description": "DEMO-0044, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080025595, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-21",
-    "projectId": "DEMO-0044",
+    "projectId": "P69080025595",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080018832&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 45,
@@ -578,11 +622,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "สถานีตรวจวัดคุณภาพน้ำอัตโนมัติ จำนวน 7 สถานี",
-    "description": "DEMO-0045, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080023796, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-20",
-    "projectId": "DEMO-0045",
+    "projectId": "P69080023796",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080017494&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 46,
@@ -591,11 +636,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "สถานีตรวจวัดคุณภาพน้ำแบบที่ 1 จำนวน 3 สถานี",
-    "description": "DEMO-0046, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080023800, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-20",
-    "projectId": "DEMO-0046",
+    "projectId": "P69080023800",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080017494&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 47,
@@ -604,11 +650,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "ปรับปรุงสถานีตรวจวัดคุณภาพน้ำอัตโนมัติ หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร",
-    "description": "DEMO-0047, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080023804, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-20",
-    "projectId": "DEMO-0047",
+    "projectId": "P69080023804",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080017494&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 48,
@@ -617,11 +664,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างเหมาบริการตรวจวิเคราะห์สารเคมีตกค้างทางการเกษตร (Pesticides) จำนวน ๑ งาน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0048, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089402297, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-18",
-    "projectId": "DEMO-0048",
+    "projectId": "69089402297",
     "department_sub_name": "หน่วยงานตัวอย่าง 05",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089402297&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 49,
@@ -630,11 +678,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างเหมาบริการสอบเทียบเครื่องตรวจวัดก๊าซ จำนวน ๑ งาน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0049, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089403685, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-18",
-    "projectId": "DEMO-0049",
+    "projectId": "69089403685",
     "department_sub_name": "หน่วยงานตัวอย่าง 05",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089403685&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 50,
@@ -643,11 +692,12 @@
     "methodId": "18",
     "method_name": "คัดเลือก",
     "title": "จ้างจัดประชุมหารือความร่วมมือด้านทรัพยากรธรรมชาติและสิ่งแวดล้อมระหว่างกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อมแห่งราชอาณาจักรไทย และกระทรวงกสิกรรมและสิ่งแวดล้อมแห่งสาธารณรัฐประชาธิบไตยประชาชนลาว โดยวิธีคัดเลือก",
-    "description": "DEMO-0050, คัดเลือก, ประกาศราคากลาง",
+    "description": "69089374436, คัดเลือก, ประกาศราคากลาง",
     "pubDate": "2026-08-18",
-    "projectId": "DEMO-0050",
+    "projectId": "69089374436",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-agpc01-web/common/download/69089374436/84cf215f-ce93-4210-a9ba-a93c96cbaf63",
+    "contract_link": ""
   },
   {
     "announce_id": 51,
@@ -656,11 +706,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "ซื้อวัสดุวิทยาศาสตร์ จำนวน 2 รายการ",
-    "description": "DEMO-0051, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080018841, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-17",
-    "projectId": "DEMO-0051",
+    "projectId": "P69080018841",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080013898&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 52,
@@ -669,11 +720,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "ซื้อวัสดุวิทยาศาสตร์ จำนวน 7 รายการ",
-    "description": "DEMO-0052, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080018846, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-17",
-    "projectId": "DEMO-0052",
+    "projectId": "P69080018846",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080013898&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 53,
@@ -682,11 +734,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างจัดเตรียมสถานที่สำหรับจัดงานประชุมกิจกรรมเวทีวิชาการแลกเปลี่ยนเรียนรู้ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0053, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69089304482, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-14",
-    "projectId": "DEMO-0053",
+    "projectId": "69089304482",
     "department_sub_name": "หน่วยงานตัวอย่าง 12",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089304482&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 54,
@@ -694,12 +747,13 @@
     "type_name": "ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
-    "title": "จ้างซ่อมบำรุงรถยนต์ทะเบียนตัวอย่าง โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0054, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "title": "จ้างซ่อมบำรุงรถยนต์หมายเลขทะเบียน กร 8759 สระบุรี โดยวิธีเฉพาะเจาะจง",
+    "description": "69089314304, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-14",
-    "projectId": "DEMO-0054",
+    "projectId": "69089314304",
     "department_sub_name": "หน่วยงานตัวอย่าง 08",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69089314304&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 55,
@@ -708,11 +762,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จัดประชุมหารือความร่วมมือด้านทรัพยากรธรรมชาติและสิ่งแวดล้อมระหว่างกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อมแห่งราชอาณาจักรไทย และกระทรวงกสิกรรมและสิ่งแวดล้อมแห่งสาธารณรัฐประชาธิบไตยประชาชนลาว",
-    "description": "DEMO-0055, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69080015780, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-08-14",
-    "projectId": "DEMO-0055",
+    "projectId": "P69080015780",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69080011960&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 56,
@@ -721,11 +776,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างก่อสร้างค่าก่อสร้างอาคารห้องปฏิบัติการสิ่งแวดล้อม หน่วยงานตัวอย่าง ตำบลสวนใหญ่ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0056, e-bidding, ประกาศเชิญชวน",
+    "description": "69079579253, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-08-07",
-    "projectId": "DEMO-0056",
+    "projectId": "69079579253",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=9d2a041d-032d-4e0d-906b-7ec6d23ca713",
+    "contract_link": ""
   },
   {
     "announce_id": 57,
@@ -734,11 +790,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างก่อสร้างค่าก่อสร้างอาคารห้องปฏิบัติการสิ่งแวดล้อม หน่วยงานตัวอย่าง ตำบลสวนใหญ่ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0057, e-bidding, ประกาศราคากลาง",
+    "description": "69079579253, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-08-07",
-    "projectId": "DEMO-0057",
+    "projectId": "69079579253",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=328737d05acb4fdcb9d5e05801e59935",
+    "contract_link": ""
   },
   {
     "announce_id": 58,
@@ -747,11 +804,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0058, e-bidding, ประกาศเชิญชวน",
+    "description": "69079296525, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-08-06",
-    "projectId": "DEMO-0058",
+    "projectId": "69079296525",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=fa22dbad-e78c-41cb-bac5-1177bd77d975",
+    "contract_link": ""
   },
   {
     "announce_id": 59,
@@ -760,11 +818,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0059, e-bidding, ประกาศราคากลาง",
+    "description": "69079296525, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-08-06",
-    "projectId": "DEMO-0059",
+    "projectId": "69079296525",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=897c218d78524303b3c828a303b8d098",
+    "contract_link": ""
   },
   {
     "announce_id": 60,
@@ -773,11 +832,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "ซื้อวัสดุงาานบ้านงานครัว จำนวน 7 รายการ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0060, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69079429493, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-05",
-    "projectId": "DEMO-0060",
+    "projectId": "69079429493",
     "department_sub_name": "หน่วยงานตัวอย่าง 01",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69079429493&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 61,
@@ -786,11 +846,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างซ่อมแซมและบำรุงรักษาครุภัณฑ์ยานพาหนะฯ (ขท-5273 อบ.)   จำนวน  ๑  คัน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0061, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69079515390, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-05",
-    "projectId": "DEMO-0061",
+    "projectId": "69079515390",
     "department_sub_name": "หน่วยงานตัวอย่าง 17",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69079515390&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 62,
@@ -799,11 +860,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างตรวจวิเคราะห์คุณภาพผิวดิน โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0062, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69079507191, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-08-04",
-    "projectId": "DEMO-0062",
+    "projectId": "69079507191",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69079507191&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 63,
@@ -812,11 +874,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างสอบเทียบเครื่องแก้วและเครื่องมือวัด โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0063, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69079604843, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-07-31",
-    "projectId": "DEMO-0063",
+    "projectId": "69079604843",
     "department_sub_name": "หน่วยงานตัวอย่าง 12",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69079604843&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 64,
@@ -825,11 +888,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างบำรุงรักษาเครื่องวิเคราะห์ตัวอย่างแบบอัตโนมัติ โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0064, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69029428004, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-07-31",
-    "projectId": "DEMO-0064",
+    "projectId": "69029428004",
     "department_sub_name": "หน่วยงานตัวอย่าง 02",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69029428004&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 65,
@@ -838,11 +902,12 @@
     "methodId": "18",
     "method_name": "คัดเลือก",
     "title": "จ้างจ้างจัดสอบแข่งขันเพื่อสรรหาและเลือกสรรพนักงานราชการทั่วไป ในสังกัดหน่วยงานตัวอย่าง โดยวิธีคัดเลือก",
-    "description": "DEMO-0065, คัดเลือก, ประกาศราคากลาง",
+    "description": "69079542289, คัดเลือก, ประกาศราคากลาง",
     "pubDate": "2026-07-31",
-    "projectId": "DEMO-0065",
+    "projectId": "69079542289",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-agpc01-web/common/download/69079542289/487cad6d-5415-4ed4-8b0d-e23aa8753a92",
+    "contract_link": ""
   },
   {
     "announce_id": 66,
@@ -851,11 +916,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างก่อสร้างค่าก่อสร้างอาคารห้องปฏิบัติการสิ่งแวดล้อม หน่วยงานตัวอย่าง ตำบลสวนใหญ่ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0066, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69079579253, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-07-31",
-    "projectId": "DEMO-0066",
+    "projectId": "69079579253",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=6b84a0e789d2454d85e941683b39d0bc",
+    "contract_link": ""
   },
   {
     "announce_id": 67,
@@ -864,11 +930,12 @@
     "methodId": "",
     "method_name": "-",
     "title": "จ้างจัดสอบแข่งขันเพื่อสรรหาและเลือกสรรพนักงานราชการทั่วไป ในสังกัดหน่วยงานตัวอย่าง",
-    "description": "DEMO-0067, -, แผนการจัดซื้อจัดจ้าง",
+    "description": "P69070018595, ' ', แผนการจัดซื้อจัดจ้าง",
     "pubDate": "2026-07-21",
-    "projectId": "DEMO-0067",
+    "projectId": "P69070018595",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=M69070014943&templateType=P0&temp_Announ=P&temp_itemNo=&seqNo=",
+    "contract_link": ""
   },
   {
     "announce_id": 68,
@@ -877,11 +944,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0068, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69079296525, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-07-20",
-    "projectId": "DEMO-0068",
+    "projectId": "69079296525",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=fce0ff2047a54e6b9fc0e73fd665d8d4",
+    "contract_link": ""
   },
   {
     "announce_id": 69,
@@ -890,11 +958,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0069, e-bidding, ยกเลิกประกาศเชิญชวน",
+    "description": "69059444072, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ยกเลิกประกาศเชิญชวน",
     "pubDate": "2026-07-08",
-    "projectId": "DEMO-0069",
+    "projectId": "69059444072",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69059444072&templateType=D2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 70,
@@ -903,11 +972,12 @@
     "methodId": "19",
     "method_name": "เฉพาะเจาะจง",
     "title": "จ้างบำรุงรักษาเชิงป้องกัน (PM) เครื่องวิเคราะห์โลหะหนัก โดยวิธีเฉพาะเจาะจง",
-    "description": "DEMO-0070, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา/ประกาศผู้ได้รับการคัดเลือก",
+    "description": "69069419465, เฉพาะเจาะจง, ยกเลิกประกาศรายชื่อผู้ชนะการเสนอราคา / ประกาศผู้ได้รับการคัดเลือก",
     "pubDate": "2026-06-26",
-    "projectId": "DEMO-0070",
+    "projectId": "69069419465",
     "department_sub_name": "หน่วยงานตัวอย่าง 10",
-    "link": ""
+    "link": "http://process.gprocurement.go.th/egp2procmainWeb/jsp/procsearch.sch?servlet=gojsp&proc_id=ShowHTMLFile&processFlows=Procure&projectId=69069419465&templateType=W2&temp_Announ=D&temp_itemNo=1&seqNo=2",
+    "contract_link": ""
   },
   {
     "announce_id": 71,
@@ -916,11 +986,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0071, e-bidding, ประกาศเชิญชวน",
+    "description": "69059444072, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-06-09",
-    "projectId": "DEMO-0071",
+    "projectId": "69059444072",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=9a151b51-32db-4707-ab94-45374e343b13",
+    "contract_link": ""
   },
   {
     "announce_id": 72,
@@ -929,11 +1000,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างสำรวจตรวจวัดค่าพิกัดและระดับน้ำในบ่อสังเกตการณ์และน้ำผิวดิน โดยเครื่องหาพิกัดดาวเทียม GNSS ด้วยวิธีการรังวัดแบบ RTK โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0072, e-bidding, ประกาศเชิญชวน",
+    "description": "69059443263, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-06-09",
-    "projectId": "DEMO-0072",
+    "projectId": "69059443263",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=fc54dc9d-e2ab-44cd-b7d5-0faa6aaad210",
+    "contract_link": ""
   },
   {
     "announce_id": 73,
@@ -942,11 +1014,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างสำรวจตรวจวัดค่าพิกัดและระดับน้ำในบ่อสังเกตการณ์และน้ำผิวดิน โดยเครื่องหาพิกัดดาวเทียม GNSS ด้วยวิธีการรังวัดแบบ RTK โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0073, e-bidding, ประกาศราคากลาง",
+    "description": "69059443263, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-06-09",
-    "projectId": "DEMO-0073",
+    "projectId": "69059443263",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=9ac388bfe9004d2b9603176d7f121626",
+    "contract_link": ""
   },
   {
     "announce_id": 74,
@@ -955,11 +1028,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างสำรวจตรวจวัดค่าพิกัดและระดับน้ำในบ่อสังเกตการณ์และน้ำผิวดิน โดยเครื่องหาพิกัดดาวเทียม GNSS ด้วยวิธีการรังวัดแบบ RTK โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0074, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69059443263, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-06-02",
-    "projectId": "DEMO-0074",
+    "projectId": "69059443263",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=458cc3e419d04a1db6e2bc0366e26fed",
+    "contract_link": ""
   },
   {
     "announce_id": 75,
@@ -968,11 +1042,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทิ้ง น้ำผิวดิน และน้ำใต้ดิน กลุ่ม PFAS โครงการศึกษาความสัมพันธ์ระหว่างน้ำผิวดินและน้ำบาดาลในพื้นที่แหล่งน้ำที่เสี่ยงต่อการปนเปื้อนลงสู่ชั้นน้ำบาดาล ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0075, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69059444072, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-05-29",
-    "projectId": "DEMO-0075",
+    "projectId": "69059444072",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=60d4a40237f444c8b738354e7a9a4804",
+    "contract_link": ""
   },
   {
     "announce_id": 76,
@@ -981,11 +1056,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อชุดโปรแหน่วยงานตัวอย่าง ราคา 700 บาทต่อปี (สำหรับเครื่องคอมพิวเตอร์ 1 เครื่อง) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0076, e-bidding, ประกาศเชิญชวน",
+    "description": "69059060624, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-05-11",
-    "projectId": "DEMO-0076",
+    "projectId": "69059060624",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=92a6cd8a-1fa1-4249-b32e-d8b21b96b4e5",
+    "contract_link": ""
   },
   {
     "announce_id": 77,
@@ -994,11 +1070,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อชุดโปรแหน่วยงานตัวอย่าง ราคา 700 บาทต่อปี (สำหรับเครื่องคอมพิวเตอร์ 1 เครื่อง) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0077, e-bidding, ประกาศราคากลาง",
+    "description": "69059060624, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-05-11",
-    "projectId": "DEMO-0077",
+    "projectId": "69059060624",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=9c167ccbdbe447e49eba19b385ab3b0f",
+    "contract_link": ""
   },
   {
     "announce_id": 78,
@@ -1007,11 +1084,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างก่อสร้างก่อสร้างอาคารหน่วยงานตัวอย่าง ตำบลรั้วใหญ่ อำเภอเมืองสุพรรณบุรี จังหวัดสุพรรณบุรี ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0078, e-bidding, ประกาศเชิญชวน",
+    "description": "68109194466, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-04-02",
-    "projectId": "DEMO-0078",
+    "projectId": "68109194466",
     "department_sub_name": "หน่วยงานตัวอย่าง 14",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=ea36a333-af7e-493f-8665-f3bd83a4dc3e",
+    "contract_link": ""
   },
   {
     "announce_id": 79,
@@ -1020,11 +1098,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างก่อสร้างก่อสร้างอาคารหน่วยงานตัวอย่าง ตำบลรั้วใหญ่ อำเภอเมืองสุพรรณบุรี จังหวัดสุพรรณบุรี ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0079, e-bidding, ประกาศราคากลาง",
+    "description": "68109194466, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-04-02",
-    "projectId": "DEMO-0079",
+    "projectId": "68109194466",
     "department_sub_name": "หน่วยงานตัวอย่าง 14",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=ed8866625076444cbc6daa039d019883",
+    "contract_link": ""
   },
   {
     "announce_id": 80,
@@ -1033,11 +1112,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างก่อสร้างก่อสร้างอาคารหน่วยงานตัวอย่าง ตำบลรั้วใหญ่ อำเภอเมืองสุพรรณบุรี จังหวัดสุพรรณบุรี ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0080, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "68109194466, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-03-16",
-    "projectId": "DEMO-0080",
+    "projectId": "68109194466",
     "department_sub_name": "หน่วยงานตัวอย่าง 14",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=612667d2027e4f92ba7c6b50153e0b93",
+    "contract_link": ""
   },
   {
     "announce_id": 81,
@@ -1046,11 +1126,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภทเครื่องมือวิเคราะห์ จำนวน  6 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0081, e-bidding, ประกาศเชิญชวน",
+    "description": "69019398141, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-03-12",
-    "projectId": "DEMO-0081",
+    "projectId": "69019398141",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=c5422a77-31f6-4fd2-ba6a-84a96b50a63c",
+    "contract_link": ""
   },
   {
     "announce_id": 82,
@@ -1059,11 +1140,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภทเครื่องมือวิเคราะห์ จำนวน  6 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0082, e-bidding, ประกาศราคากลาง",
+    "description": "69019398141, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-03-12",
-    "projectId": "DEMO-0082",
+    "projectId": "69019398141",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=1493367e52a54114a31a2eae1147fac4",
+    "contract_link": ""
   },
   {
     "announce_id": 83,
@@ -1072,11 +1154,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภทเครื่องมือวิเคราะห์ จำนวน  6 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0083, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69019398141, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-03-04",
-    "projectId": "DEMO-0083",
+    "projectId": "69019398141",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "",
+    "contract_link": ""
   },
   {
     "announce_id": 84,
@@ -1085,11 +1168,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภทเครื่องมือวิเคราะห์ จำนวน 1 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0084, e-bidding, ประกาศเชิญชวน",
+    "description": "69019524927, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-02-12",
-    "projectId": "DEMO-0084",
+    "projectId": "69019524927",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=72e2cf31-d450-4dc2-a38d-c90a2225ef9e",
+    "contract_link": ""
   },
   {
     "announce_id": 85,
@@ -1098,11 +1182,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภทเครื่องมือวิเคราะห์ จำนวน 1 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0085, e-bidding, ประกาศราคากลาง",
+    "description": "69019524927, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-02-12",
-    "projectId": "DEMO-0085",
+    "projectId": "69019524927",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=80bdb91b9d08479183ae8834734aed13",
+    "contract_link": ""
   },
   {
     "announce_id": 86,
@@ -1111,11 +1196,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภททั่วไป จำนวน 17 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0086, e-bidding, ประกาศเชิญชวน",
+    "description": "69019080914, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-02-06",
-    "projectId": "DEMO-0086",
+    "projectId": "69019080914",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=20bb580f-f53b-46fe-a59a-45092ca45a7b",
+    "contract_link": ""
   },
   {
     "announce_id": 87,
@@ -1124,11 +1210,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภททั่วไป จำนวน 17 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0087, e-bidding, ประกาศราคากลาง",
+    "description": "69019080914, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-02-06",
-    "projectId": "DEMO-0087",
+    "projectId": "69019080914",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=4e46ba89d6b44ddeac51438f552d5346",
+    "contract_link": ""
   },
   {
     "announce_id": 88,
@@ -1137,11 +1224,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อโครงการจัดหาแบบจำลองทางคณิตศาสตร์สำหรับจัดทำแผนที่เสียงเชิงกลยุทธ์ระดับประเทศ (National Strategic Noise Mapping) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0088, e-bidding, ประกาศเชิญชวน",
+    "description": "68109498267, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-02-04",
-    "projectId": "DEMO-0088",
+    "projectId": "68109498267",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=71b9603d-e1cf-44bf-b3bc-2dce6f3df575",
+    "contract_link": ""
   },
   {
     "announce_id": 89,
@@ -1150,11 +1238,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อโครงการจัดหาแบบจำลองทางคณิตศาสตร์สำหรับจัดทำแผนที่เสียงเชิงกลยุทธ์ระดับประเทศ (National Strategic Noise Mapping) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0089, e-bidding, ประกาศราคากลาง",
+    "description": "68109498267, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-02-04",
-    "projectId": "DEMO-0089",
+    "projectId": "68109498267",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=02d15f9e3e7b4859a56c5a408a4ac133",
+    "contract_link": ""
   },
   {
     "announce_id": 90,
@@ -1163,11 +1252,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภทเครื่องมือวิเคราะห์ จำนวน 1 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0090, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69019524927, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-02-02",
-    "projectId": "DEMO-0090",
+    "projectId": "69019524927",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=4930ed8b856c4b059086e1d4735ac11b",
+    "contract_link": ""
   },
   {
     "announce_id": 91,
@@ -1176,11 +1266,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างดูดตะกอนหน้าฝายลำห้วยคลิตี้และขนส่งไปยังหลุมฝังกลบ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0091, e-bidding, ประกาศเชิญชวน",
+    "description": "69019076699, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-01-30",
-    "projectId": "DEMO-0091",
+    "projectId": "69019076699",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=6b2c028d-b634-4170-8a53-42e52f5e9ab7",
+    "contract_link": ""
   },
   {
     "announce_id": 92,
@@ -1189,11 +1280,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างดูดตะกอนหน้าฝายลำห้วยคลิตี้และขนส่งไปยังหลุมฝังกลบ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0092, e-bidding, ประกาศราคากลาง",
+    "description": "69019076699, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-01-30",
-    "projectId": "DEMO-0092",
+    "projectId": "69019076699",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=c1a55bc66c284ee382051de1703e6a9f",
+    "contract_link": ""
   },
   {
     "announce_id": 93,
@@ -1202,11 +1294,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างการจัดการระบบรายงานผลคุณภาพน้ำแบบอัตโนมัติ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0093, e-bidding, ประกาศเชิญชวน",
+    "description": "69019286890, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-01-28",
-    "projectId": "DEMO-0093",
+    "projectId": "69019286890",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=29eb3e7d-a78f-4f44-a177-07f2756be41f",
+    "contract_link": ""
   },
   {
     "announce_id": 94,
@@ -1215,11 +1308,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างการจัดการระบบรายงานผลคุณภาพน้ำแบบอัตโนมัติ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0094, e-bidding, ประกาศราคากลาง",
+    "description": "69019286890, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-01-28",
-    "projectId": "DEMO-0094",
+    "projectId": "69019286890",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=c5d7da7b06f04d5aae1a1c179485e2b1",
+    "contract_link": ""
   },
   {
     "announce_id": 95,
@@ -1228,11 +1322,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อครุภัณฑ์วิทยาศาสตร์ประเภททั่วไป จำนวน 17 รายการ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0095, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69019080914, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-01-27",
-    "projectId": "DEMO-0095",
+    "projectId": "69019080914",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "",
+    "contract_link": ""
   },
   {
     "announce_id": 96,
@@ -1241,11 +1336,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทะเล โครงการติดตามตรวจสอบคุณภาพน้ำทะเลชายฝั่งและสิ่งแวดล้อมทางทะเลทั่วประเทศ ประจำปีงบประมาณ พ.ศ. 2569 ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0096, e-bidding, ประกาศเชิญชวน",
+    "description": "68129337821, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศเชิญชวน",
     "pubDate": "2026-01-20",
-    "projectId": "DEMO-0096",
+    "projectId": "68129337821",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-template-service/dwnt/view-pdf-file?templateId=1c0c9fc3-dabf-4d29-8439-dbf1d97d1e11",
+    "contract_link": ""
   },
   {
     "announce_id": 97,
@@ -1254,11 +1350,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาซื้อโครงการจัดหาแบบจำลองทางคณิตศาสตร์สำหรับจัดทำแผนที่เสียงเชิงกลยุทธ์ระดับประเทศ (National Strategic Noise Mapping) หน่วยงานตัวอย่าง แขวงพญาไท เขตพญาไท กรุงเทพมหานคร ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0097, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "68109498267, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-01-20",
-    "projectId": "DEMO-0097",
+    "projectId": "68109498267",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=16ef2dde4c9a4bc189f5f7ef8b910b1e",
+    "contract_link": ""
   },
   {
     "announce_id": 98,
@@ -1267,11 +1364,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างดูดตะกอนหน้าฝายลำห้วยคลิตี้และขนส่งไปยังหลุมฝังกลบ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0098, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69019076699, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-01-20",
-    "projectId": "DEMO-0098",
+    "projectId": "69019076699",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=5a60763c6eb74f3fbc246e71778b5d5a",
+    "contract_link": ""
   },
   {
     "announce_id": 99,
@@ -1280,11 +1378,12 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างการจัดการระบบรายงานผลคุณภาพน้ำแบบอัตโนมัติ ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0099, e-bidding, ร่างเอกสารประกวดราคา ( e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
+    "description": "69019286890, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ร่างเอกสารประกวดราคา (e-Bidding) และร่างเอกสารซื้อหรือจ้างด้วยวิธีสอบราคา",
     "pubDate": "2026-01-20",
-    "projectId": "DEMO-0099",
+    "projectId": "69019286890",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=51a3b8f9a78d4beab212576b3fb26703",
+    "contract_link": ""
   },
   {
     "announce_id": 100,
@@ -1293,10 +1392,11 @@
     "methodId": "16",
     "method_name": "e-bidding",
     "title": "ประกวดราคาจ้างวิเคราะห์ตัวอย่างน้ำทะเล โครงการติดตามตรวจสอบคุณภาพน้ำทะเลชายฝั่งและสิ่งแวดล้อมทางทะเลทั่วประเทศ ประจำปีงบประมาณ พ.ศ. 2569 ด้วยวิธีประกวดราคาอิเล็กทรอนิกส์ (e-bidding)",
-    "description": "DEMO-0100, e-bidding, ประกาศราคากลาง",
+    "description": "68129337821, ประกวดราคาอิเล็กทรอนิกส์ (e-bidding), ประกาศราคากลาง",
     "pubDate": "2026-01-20",
-    "projectId": "DEMO-0100",
+    "projectId": "68129337821",
     "department_sub_name": "หน่วยงานตัวอย่าง 06",
-    "link": ""
+    "link": "https://process5.gprocurement.go.th/egp-upload-service/v1/downloadFileTest?fileId=00ec02ebd44b4e9891f50dd1a2f11ad4",
+    "contract_link": ""
   }
 ]

@@ -7,8 +7,10 @@ database configuration, directory authentication, logos, logs or workers ship
 with this static demonstration.
 
 The initial dataset contains exactly 100 announcements and 10 queues. Agency
-names and reference IDs were replaced; document links and system connection
-details were removed. Changes are stored only in the current browser tab.
+names and organizational branding were replaced. Announcement descriptions,
+project IDs, dates and public document/contract links match their source records.
+Public links open the external E-GP website only when clicked. Internal system
+connection details are excluded. Changes are stored only in the current browser tab.
 Synchronization and email actions are simulated and do not contact the source.
 
 Third-party assets copied from the source application:
