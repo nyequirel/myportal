@@ -31,7 +31,8 @@
     }));
     if (announcements.length !== 100 || queues.length !== 10) throw new Error('invalid sample counts');
     const cached = read();
-    state = cached && Array.isArray(cached.announcements) && cached.announcements.length <= 100 && Array.isArray(cached.queues) && cached.queues.length === 10 ? cached : { announcements, queues, report:null, logs:[] };
+    const datasetVersion = manifest.datasetVersion || '1';
+    state = cached && cached.datasetVersion === datasetVersion && Array.isArray(cached.announcements) && cached.announcements.length <= 100 && Array.isArray(cached.queues) && cached.queues.length === 10 ? cached : { datasetVersion, announcements, queues, report:null, logs:[] };
     // An interrupted simulation can be resumed after navigating to another page.
     state.queues.forEach(q => { if (q.status === 'running') q.status = 'pending'; });
     const types = [...new Map(announcements.map(a => [a.anounceType, a.type_name])).entries()];
@@ -48,6 +49,7 @@
     }
     if (page === 'announce') {
       let currentPage = 1;
+      text('announcementDescription',`ชุดตัวอย่าง 100 รายการ ครบ ${types.length} ประเภทที่มีข้อมูลในหน้าต้นทาง เรียงจากวันที่ล่าสุด`);
       options('announceTypeFilter',types,'ทุกประเภทประกาศ');
       options('departmentSubFilter',departments.map(d => [d,d]),'ทุกหน่วยงานย่อย');
       options('announceType',types);

@@ -22,10 +22,23 @@ try {
  page.on('request',r=>{if(r.method()!=='GET'||!r.url().startsWith('http://127.0.0.1:'))unsafeRequests.push(`${r.method()} ${r.url()}`);});
  for(const base of ['http://127.0.0.1:4183/demos/egp/','http://127.0.0.1:4184/myportal/demos/egp/']) {
   await page.goto(base);await expect(page.locator('#totalCount')).toHaveText('100');await expect(page.locator('#queueCount')).toHaveText('10');
+  await page.evaluate(async()=>{
+    const announcements=await (await fetch('data/announcements.json')).json();
+    const queues=await (await fetch('data/queues.json')).json();
+    sessionStorage.setItem('procureflow-demo-v1',JSON.stringify({datasetVersion:'previous-version',announcements:announcements.slice(0,1),queues,logs:[]}));
+  });
+  await page.reload();await expect(page.locator('#totalCount')).toHaveText('100');
   await page.evaluate(()=>document.fonts.ready);
   assert.equal(await page.evaluate(()=>[...document.fonts].some(font=>font.family==='Font Awesome 5 Free'&&font.status==='loaded')),true,'Icon font must load');
   await page.screenshot({path:'.artifacts/egp-dashboard-desktop.png',fullPage:true});
   await page.goto(`${base}announce.html`);await expect(page.locator('#announce-table tbody tr')).toHaveCount(10);
+  await expect(page.locator('#announceTypeFilter option')).toHaveCount(8);
+  for(const [code,count] of [['15',15],['B0',11],['D0',14],['D1',1],['P0',20],['W0',20],['W1',19]]){
+    await page.locator('#announceTypeFilter').selectOption(code);
+    await expect(page.locator('#announcementSummary')).toContainText(`${count} รายการ ·`);
+    await expect(page.locator('[data-edit]')).toHaveCount(Math.min(10,count));
+  }
+  await page.locator('#announceTypeFilter').selectOption('');
   await page.locator('#announcementNext').click();await expect(page.locator('#announcementSummary')).toContainText('หน้า 2 / 10');
   await page.locator('#announcementSearch').fill('zzzz-no-match');await expect(page.locator('#announce-table tbody')).toContainText('ไม่พบประกาศ');
   await page.locator('#announcementSearch').fill('DEMO-0001');await expect(page.locator('[data-edit]')).toHaveCount(1);
