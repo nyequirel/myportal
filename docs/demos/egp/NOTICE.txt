@@ -1,4 +1,4 @@
-ProcureFlow - E-GP portfolio demonstration
+ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ - E-GP portfolio demonstration
 
 Announcement, synchronization and email report page markup adapted from the
 owner-provided PHP application. The dashboard, neutral navigation shell and

@@ -89,7 +89,7 @@ try {
   }
   await page.setViewportSize({width:1440,height:1000});await page.locator('#resetDemo').click();
  }
- await page.goto('http://127.0.0.1:4184/myportal/project.html?id=egp-integration');await expect(page.locator('#project-title')).toHaveText('ProcureFlow · E-GP Integration');
+ await page.goto('http://127.0.0.1:4184/myportal/project.html?id=egp-integration');await expect(page.locator('#project-title')).toHaveText('ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ');
  assert.deepEqual(errors,[]);assert.deepEqual(badResponses,[]);assert.deepEqual(unsafeRequests,[]);
  console.log('E-GP checks passed: CSP backend + GitHub subpath; 100/10 limits; search, pagination, CRUD, escaping, reset, queue filters/start/stop/complete, email preview, session persistence, mobile/tablet, no external or mutation requests.');
 }finally{await browser.close();await new Promise(r=>server.close(r));await new Promise(r=>staticServer.close(r));db.close();}
