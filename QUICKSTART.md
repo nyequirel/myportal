@@ -1,5 +1,9 @@
 # เริ่มใช้งาน MyPublic
 
+เว็บไซต์จริง: https://nyequirel.github.io/myportal/ · Repository: https://github.com/nyequirel/myportal
+
+สำหรับ repository นี้ตั้งค่า Pages เป็น **Deploy from a branch → main → /docs** แล้ว อัปเดตข้อมูลสาธารณะใน `docs` และ push ไป `main` เพื่อเผยแพร่รุ่นใหม่
+
 ทำต่อในเครื่องได้โดยไม่ต้องเข้าสู่ระบบ GitHub
 
 ## ดูหน้าเว็บ
@@ -58,4 +62,4 @@ https://USERNAME.github.io/mypublic/project.html?id=sample-web
 
 ชุดไฟล์ไม่รวม Laravel template เดิม, node_modules, ฐานข้อมูล, รหัสผ่าน, OTP หรือไฟล์ `.env` ในเครื่อง แต่ข้อมูลโปรไฟล์และอีเมลติดต่อที่ใส่ใน `docs/data/portfolio.json` เป็นข้อมูลสาธารณะ
 
-ตอนนี้ยังไม่มีการอัปโหลดหรือเชื่อมต่อบัญชี GitHub เมื่อพร้อมจึงตั้ง repository ตาม [คู่มือฉบับเต็ม](README.md)
+Source code เชื่อมกับ `nyequirel/myportal` แล้ว ส่วนการเข้าสู่ระบบเจ้าของพอร์ตด้วย OTP จริงยังต้องตั้ง SMTP และ hosting backend ตาม [คู่มือฉบับเต็ม](README.md)

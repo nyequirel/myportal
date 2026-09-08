@@ -4,6 +4,8 @@
 
 เว็บไซต์: https://nyequirel.github.io/myportal/ · Repository: https://github.com/nyequirel/myportal
 
+Repository นี้ตั้ง Pages เป็น **Deploy from a branch → main → /docs** เมื่อ push ข้อมูลหน้าเว็บจะเผยแพร่อัตโนมัติ Custom workflow `Deploy portfolio to GitHub Pages` ถูกปิดไว้เพื่อใช้การเผยแพร่จาก branch เพียงช่องทางเดียว
+
 เว็บไซต์บน GitHub Pages ใช้หน้าเว็บ static ส่วน Login และการส่ง OTP จริงต้องเชื่อม backend ตามขั้นตอนด้านล่าง
 
 เริ่มใช้งานแบบสั้น ๆ ที่ [QUICKSTART.md](QUICKSTART.md) หรือดับเบิลคลิก `start-local.cmd` เพื่อเปิดเซิร์ฟเวอร์ในเครื่อง ใช้ `scripts/package.ps1` เพื่อสร้างชุด ZIP สำหรับอัปโหลดภายหลัง
@@ -21,12 +23,12 @@ GitHub เก็บ source code Laravel ได้ แต่ **GitHub Pages ร�
 1. แก้ `docs/data/portfolio.json` เป็นข้อมูลจริงของคุณ: ชื่อ คำแนะนำตัว ทักษะ อีเมลติดต่อ และ `githubUrl`
 2. แทนผลงานตัวอย่างด้วยผลงานจริง ตั้ง `sample: false` และใส่ URL ของ repository / demo เป็น `https://...`
 3. อัปโหลดโปรเจกต์นี้ไปยัง repository ของคุณ สาขา `main` โดยเก็บโครงสร้าง `docs/` ไว้
-4. ใน GitHub ไปที่ **Settings → Pages → Build and deployment → Source → GitHub Actions**
-5. เปิด **Actions → Deploy portfolio to GitHub Pages → Run workflow** หรือ push การเปลี่ยนแปลงใน `docs/` ระบบจะเผยแพร่ให้
+4. ใน GitHub ไปที่ **Settings → Pages → Build and deployment → Source → Deploy from a branch** เลือก `main` และ `/docs`
+5. กด **Save** หรือ push การเปลี่ยนแปลงใน `docs/` ระบบจะเผยแพร่ให้
 
 Repository ชื่อ `USERNAME.github.io` จะได้ `https://USERNAME.github.io/` ส่วน repository อื่น เช่น `mypublic` จะได้ `https://USERNAME.github.io/mypublic/` ไฟล์หน้าเว็บใช้ relative paths จึงรองรับทั้งสองแบบ
 
-อีกทางเลือกคือ Source = **Deploy from a branch**, เลือก `main` และ `/docs` โดยไม่ต้องใช้ workflow
+อีกทางเลือกคือ Source = **GitHub Actions** แล้วเปิดใช้งาน workflow `Deploy portfolio to GitHub Pages` และกด **Run workflow** วิธีนี้ต้องให้บัญชีใช้งาน Actions ได้ตามปกติ
 
 หากมี repository อยู่แล้ว ให้ clone repository นั้นก่อน แล้วคัดลอกไฟล์โปรเจกต์นี้เข้าไป ตรวจความเปลี่ยนแปลงก่อน commit เพื่อไม่ทับไฟล์เดิม ห้าม force push โดยไม่ตรวจสอบ
 
