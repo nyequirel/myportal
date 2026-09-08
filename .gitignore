@@ -1,0 +1,11 @@
+node_modules/
+.tools/
+server/.env
+server/data/
+*.log
+coverage/
+.artifacts/
+releases/
+.DS_Store
+# Original Laravel reference is kept locally, outside the new portfolio repository.
+sample_template/

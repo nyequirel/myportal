@@ -1,0 +1,19 @@
+{
+  "profile": {
+    "name": "Phattarayus",
+    "nameTh": "ภัทรายุส ธรรมโคตร",
+    "headline": "สร้างสิ่งที่มีความหมาย\nผ่านเทคโนโลยี",
+    "role": "Developer & problem solver",
+    "bio": "พื้นที่เล็ก ๆ สำหรับบอกเล่าตัวตน บันทึกการเรียนรู้ และรวบรวมผลงานที่ตั้งใจทำให้เกิดประโยชน์ในทุกวัน",
+    "about": "ผมสนใจการนำเทคโนโลยีมาช่วยให้การทำงานง่ายขึ้น ตั้งแต่การออกแบบประสบการณ์ใช้งาน ไปจนถึงการพัฒนาระบบที่ใช้งานได้จริง พื้นที่นี้จะค่อย ๆ เติบโตไปพร้อมกับผลงานและสิ่งใหม่ ๆ ที่ได้เรียนรู้",
+    "location": "Thailand",
+    "email": "",
+    "githubUrl": "",
+    "skills": ["Web development", "UI design", "Automation", "Learning by doing"]
+  },
+  "projects": [
+    { "id": "sample-web", "title": "Personal portfolio", "category": "Web application", "description": "ตัวอย่างพื้นที่นำเสนอตัวตนและผลงาน พร้อมโครงสร้างสำหรับเชื่อมต่อระบบสมาชิก", "tags": ["HTML", "CSS", "JavaScript"], "githubUrl": "", "demoUrl": "", "featured": true, "published": true, "sample": true, "color": "mint" },
+    { "id": "sample-data", "title": "Data workspace", "category": "Data & automation", "description": "ตัวอย่างการนำเสนอโปรเจกต์ด้านข้อมูล เพิ่มรายละเอียดและลิงก์ผลงานจริงของคุณได้ภายหลัง", "tags": ["Data", "Dashboard"], "githubUrl": "", "demoUrl": "", "featured": false, "published": true, "sample": true, "color": "peach" },
+    { "id": "sample-lab", "title": "Ideas into code", "category": "Experiments", "description": "ตัวอย่างพื้นที่รวมการทดลอง เครื่องมือเล็ก ๆ และบันทึกการเรียนรู้ระหว่างทาง", "tags": ["Tools", "Open source"], "githubUrl": "", "demoUrl": "", "featured": false, "published": true, "sample": true, "color": "lavender" }
+  ]
+}

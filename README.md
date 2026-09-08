@@ -1,0 +1,139 @@
+# MyPublic — Personal portfolio
+
+เว็บโปรไฟล์และรวมผลงาน ภาษาไทย รองรับมือถือ แยกจาก Laravel template เดิม
+
+เว็บไซต์: https://nyequirel.github.io/myportal/ · Repository: https://github.com/nyequirel/myportal
+
+เว็บไซต์บน GitHub Pages ใช้หน้าเว็บ static ส่วน Login และการส่ง OTP จริงต้องเชื่อม backend ตามขั้นตอนด้านล่าง
+
+เริ่มใช้งานแบบสั้น ๆ ที่ [QUICKSTART.md](QUICKSTART.md) หรือดับเบิลคลิก `start-local.cmd` เพื่อเปิดเซิร์ฟเวอร์ในเครื่อง ใช้ `scripts/package.ps1` เพื่อสร้างชุด ZIP สำหรับอัปโหลดภายหลัง
+
+- `docs/` — HTML/CSS/JavaScript พร้อมเผยแพร่บน **GitHub Pages** ไม่มีขั้นตอน build
+- `server/` — backend ขนาดเล็ก ใช้ Node.js + SQLite สำหรับเจ้าของพอร์ต: รหัสผ่าน → OTP ทางอีเมล → จัดการโปรไฟล์/ผลงาน
+- `sample_template/` — Laravel ต้นฉบับ เก็บไว้ในเครื่องโดยไม่แก้ไขและไม่รวมใน Git repository ใหม่นี้
+
+แต่ละผลงานมีหน้ารายละเอียดและลิงก์ของตัวเองที่ `project.html?id=PROJECT_ID` คลิกการ์ดเพื่อเปิด หรือกดคัดลอกลิงก์จากหน้าผลงานเพื่อแชร์ รองรับภาพรวม บทบาท ช่วงเวลา โจทย์ วิธีดำเนินงาน และผลลัพธ์ ซึ่งแก้ไขได้ในหลังบ้าน ส่วนที่เว้นว่างจะไม่แสดง และลิงก์จะคงเดิมเมื่อเปลี่ยนชื่อผลงาน ดูวิธีเพิ่มโปรเจกต์ใน [QUICKSTART.md](QUICKSTART.md)
+
+GitHub เก็บ source code Laravel ได้ แต่ **GitHub Pages รัน PHP, Laravel, Node.js หรือส่งอีเมลฝั่งเซิร์ฟเวอร์ไม่ได้** ([เอกสาร GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)) จึงต้องใช้ hosting แยกสำหรับ backend หากต้องการ login จริง
+
+## เริ่มจากพอร์ตบน GitHub Pages
+
+1. แก้ `docs/data/portfolio.json` เป็นข้อมูลจริงของคุณ: ชื่อ คำแนะนำตัว ทักษะ อีเมลติดต่อ และ `githubUrl`
+2. แทนผลงานตัวอย่างด้วยผลงานจริง ตั้ง `sample: false` และใส่ URL ของ repository / demo เป็น `https://...`
+3. อัปโหลดโปรเจกต์นี้ไปยัง repository ของคุณ สาขา `main` โดยเก็บโครงสร้าง `docs/` ไว้
+4. ใน GitHub ไปที่ **Settings → Pages → Build and deployment → Source → GitHub Actions**
+5. เปิด **Actions → Deploy portfolio to GitHub Pages → Run workflow** หรือ push การเปลี่ยนแปลงใน `docs/` ระบบจะเผยแพร่ให้
+
+Repository ชื่อ `USERNAME.github.io` จะได้ `https://USERNAME.github.io/` ส่วน repository อื่น เช่น `mypublic` จะได้ `https://USERNAME.github.io/mypublic/` ไฟล์หน้าเว็บใช้ relative paths จึงรองรับทั้งสองแบบ
+
+อีกทางเลือกคือ Source = **Deploy from a branch**, เลือก `main` และ `/docs` โดยไม่ต้องใช้ workflow
+
+หากมี repository อยู่แล้ว ให้ clone repository นั้นก่อน แล้วคัดลอกไฟล์โปรเจกต์นี้เข้าไป ตรวจความเปลี่ยนแปลงก่อน commit เพื่อไม่ทับไฟล์เดิม ห้าม force push โดยไม่ตรวจสอบ
+
+```powershell
+# สำหรับ repository ว่าง และโฟลเดอร์นี้ยังไม่มี Git
+git init -b main
+git add .
+git commit -m "Create portfolio with email two-step login"
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git push -u origin main
+```
+
+ใช้การเข้าสู่ระบบของ Git/GitHub ตามปกติ ไม่ใส่ token ไว้ใน source code หรือ URL และไม่ต้องส่งรหัสผ่านให้ผู้ช่วย
+
+ในโหมด static ระบบแสดงข้อมูลจาก JSON เท่านั้น หน้า login จะแจ้งว่ายังไม่ได้เชื่อม backend และปิดการส่งแบบฟอร์ม ไม่มีบัญชีหรือ OTP ปลอมให้เข้าสู่ระบบได้
+
+## เปิดระบบเต็มในเครื่อง
+
+ต้องใช้ **Node.js 22.13 ขึ้นไป** (แนะนำ 22 LTS หรือ 24 LTS) มี dependency ฝั่งใช้งานสองตัว: Express และ Nodemailer; SQLite ใช้โมดูลที่มากับ Node ([เอกสาร Node SQLite](https://nodejs.org/api/sqlite.html))
+
+```powershell
+cd C:\Users\phattarayus.t\Desktop\mypublic
+npm install
+Copy-Item server/.env.example server/.env
+```
+
+แก้ไฟล์ **`server/.env` ในเครื่อง**:
+
+```dotenv
+OWNER_EMAIL=your-real-email@example.com
+OWNER_PASSWORD=your-unique-password-at-least-12-characters
+```
+
+```powershell
+npm run owner:create
+# ลบค่า OWNER_PASSWORD ออกจาก server/.env หลังสร้างบัญชี
+npm start
+```
+
+เปิด **http://localhost:3000** (ใช้ hostname ให้ตรง `APP_URL`) จากนั้นเข้าสู่ระบบที่ `/login.html` ระบบไม่เปิดรับสมัครสมาชิกสาธารณะ ผู้ชมดูพอร์ตได้ทันที
+
+หาก PowerShell บล็อก `npm.ps1` ให้ใช้ `npm.cmd` แทน หากเครื่องเลือกไฟล์ `C:\Windows\System32\node` แทน Node จริง ให้ตั้ง PATH เฉพาะหน้าต่างนี้ก่อน:
+
+```powershell
+$env:PATH = 'C:\Program Files\nodejs;' + $env:PATH
+npm.cmd start
+```
+
+**โหมดพัฒนาเริ่มต้นยังไม่ส่งอีเมลจริง:** `MAIL_MODE=outbox` เขียนอีเมลทดสอบลง `server/data/outbox/latest-email.txt` อ่าน OTP จากไฟล์นี้เพื่อทดลอง flow ข้อมูลดังกล่าวไม่ถูกเสิร์ฟผ่านเว็บและถูกกันออกจาก Git
+
+เมื่อใช้งาน backend ครั้งแรก ระบบนำเข้าข้อมูล `docs/data/portfolio.json` ไปยัง SQLite ครั้งเดียว หลังจากนั้นแก้ข้อมูลผ่านหลังบ้าน ฐานข้อมูลอยู่ที่ `server/data/portfolio.sqlite` และยังอยู่เมื่อปิด/เปิดเซิร์ฟเวอร์ใหม่
+
+## ตั้งค่าอีเมลจริง
+
+แก้ `server/.env` ด้วยค่าจากผู้ให้บริการ SMTP ของคุณ:
+
+```dotenv
+MAIL_MODE=smtp
+SMTP_HOST=smtp.your-provider.example
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-smtp-user
+SMTP_PASS=your-smtp-password-or-app-password
+MAIL_FROM="MyPublic <no-reply@your-domain.example>"
+```
+
+พอร์ต 587 ใช้ STARTTLS และบังคับ TLS; พอร์ต 465 ให้ตั้ง `SMTP_SECURE=true` ข้อมูล sender ต้องได้รับอนุญาตจากผู้ให้บริการ ([เอกสาร Nodemailer SMTP](https://nodemailer.com/smtp)) แล้ว restart เซิร์ฟเวอร์
+
+## เชื่อม GitHub Pages กับ backend
+
+1. รัน backend บนเครื่อง/hosting ที่รองรับ Node.js และมีพื้นที่เก็บไฟล์ถาวรสำหรับ `server/data/` ใช้ backend หนึ่ง instance และสำรอง SQLite ด้วยเครื่องมือ backup ที่รองรับ SQLite
+2. ตั้ง HTTPS reverse proxy ไปยัง Node; `APP_URL=https://api.your-domain.example` ต้องตรง URL ที่ผู้ใช้เปิด
+3. ตั้ง `NODE_ENV=production`, `MAIL_MODE=smtp` และ `APP_SECRET` แบบสุ่มอย่างน้อย 64 ตัวอักษร เช่นสร้างด้วย:
+
+   ```powershell
+   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+   ```
+
+4. ตั้ง `HOST=0.0.0.0` เฉพาะกรณี hosting/container ต้องรับ connection ภายนอก และใช้ `PORT` ตามที่ hosting กำหนด
+5. สร้างบัญชีเจ้าของบน backend ด้วยขั้นตอน `owner:create` โดยไม่ใส่บัญชีเริ่มต้นลง Git
+6. ใน `docs/config.js` ตั้ง `apiBaseUrl: "https://api.your-domain.example"` แล้ว push
+
+หน้าพอร์ตบน Pages อ่านเฉพาะข้อมูลสาธารณะจาก API; หน้า login เปิดระบบบนโดเมน backend โดยตรงเพื่อใช้ HttpOnly cookie แบบ same-origin ไม่พึ่ง third-party cookies ไม่เก็บ token ใน localStorage
+
+หาก backend ใช้ไม่ได้ หน้าพอร์ตจะแสดง JSON ฉบับสำรองพร้อมข้อความแจ้ง การแก้ไขผ่านหลังบ้านบันทึกใน SQLite และมีผลต่อหน้าที่เชื่อม API ทันที **ไม่ได้ push GitHub อัตโนมัติ** ปุ่ม “ส่งออกไฟล์สำหรับ GitHub” จะดาวน์โหลดเฉพาะผลงานที่เผยแพร่แล้ว ให้นำไปแทน `docs/data/portfolio.json` และ commit/push เพื่ออัปเดตฉบับ static
+
+## การยืนยันตัวตน
+
+- รหัสผ่านอย่างน้อย 12 ตัวอักษร จัดเก็บด้วย salted scrypt
+- สร้าง session หลังผ่านทั้งรหัสผ่านและ OTP เท่านั้น อายุ session 8 ชั่วโมง
+- OTP 6 หลัก ใช้ครั้งเดียว หมดอายุ 10 นาที ผูกกับ pending cookie และเก็บ HMAC ในฐานข้อมูล
+- ลอง OTP ได้ 5 ครั้งต่อ challenge, ขอส่งใหม่ได้ทุก 60 วินาที โดยไม่รีเซ็ตอายุหรือจำนวนครั้งที่ลองผิด
+- จำกัดการลองรหัสผ่าน/OTP และการส่งอีเมลด้วยข้อมูลใน SQLite จึงไม่หายเมื่อ restart
+- ป้องกันคำขอแก้ไขจาก origin อื่น ใช้ JSON, HttpOnly/SameSite cookies และ Secure cookies ใน production
+- หากส่งอีเมลไม่สำเร็จ challenge ถูกยกเลิก และไม่มีการให้ session
+- ไม่มีการรีเซ็ตรหัสผ่านผ่านหน้าเว็บในรุ่นแรก หากลืม ให้ตั้ง OWNER_EMAIL/OWNER_PASSWORD ในเครื่อง backend แล้วรัน `npm run owner:create -- --reset` เพื่อเปลี่ยนบัญชีและเพิกถอน session เดิมทั้งหมด
+
+## ตรวจสอบ
+
+```powershell
+npm run check
+npm test
+npm audit
+```
+
+ทดสอบผ่านเบราว์เซอร์ด้วย `npm run test:browser` (Windows ใช้ Chrome ที่ติดตั้งไว้; Linux ให้รัน `npx playwright install chromium` ก่อน) ทดสอบฐานข้อมูลในหน่วยความจำแยกจากข้อมูลจริง และบันทึกภาพหน้าจอใน `.artifacts/`
+
+ครอบคลุมการข้าม OTP, รหัสผิด/หมดอายุ/ใช้ซ้ำ, ส่งใหม่, SMTP ล้มเหลว, brute force, CSRF, ปิด session, เก็บฉบับร่าง, ตรวจ URL และการคงอยู่ของข้อมูล มี GitHub Actions สำหรับรัน syntax checks และ integration tests
+
+ยังต้องตั้ง GitHub repository จริง, บัญชีเจ้าของ, SMTP และ hosting backend ก่อนใช้งานจริง การทดสอบอัตโนมัติใช้อีเมลจำลอง ไม่ได้ยืนยันการส่งถึง inbox ของผู้ให้บริการจริง

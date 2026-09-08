@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="พื้นที่แนะนำตัว รวบรวมผลงาน และบันทึกการเรียนรู้ของ Phattarayus">
+  <meta name="theme-color" content="#f7f8fa"><title>Phattarayus — Personal portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css"><script src="config.js" defer></script><script src="assets/portfolio.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+  <header class="site-header"><div class="container nav-row">
+    <a class="brand" href="./"><span class="brand-mark">p<span>.</span></span><span data-name>Phattarayus</span><span class="brand-slash">/ portfolio</span></a>
+    <nav aria-label="เมนูหลัก"><a class="nav-active" href="#work">ผลงาน</a><a href="#about">เกี่ยวกับฉัน</a><a href="#contact">ติดต่อ</a></nav>
+    <a class="owner-link" href="login.html" aria-label="เข้าสู่ระบบเจ้าของพอร์ต"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>เข้าสู่ระบบ</span></a>
+  </div></header>
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> MY PERSONAL SPACE</p><p class="hello">สวัสดีครับ, ผม <span data-name>Phattarayus</span> <span aria-hidden="true">↗</span></p>
+        <h1 id="hero-title">สร้างสิ่งที่มีความหมาย<br>ผ่านเทคโนโลยี</h1><p class="hero-description" id="bio"></p>
+        <div class="hero-actions"><a class="button primary" href="#work">สำรวจผลงาน <span aria-hidden="true">↗</span></a><a class="button ghost" id="hero-secondary" href="#about">รู้จักกันมากขึ้น <span aria-hidden="true">→</span></a></div>
+        <div class="hero-footnote"><span id="location">Thailand</span><span class="separator"></span><span id="role">Developer & problem solver</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><div class="floating-pill pill-top"><span class="status-dot"></span> Always exploring</div>
+        <div class="code-card"><div class="code-top"><i></i><i></i><i></i><span>hello, world.</span></div><div class="code-body"><span class="code-line-number">01</span><span class="code-muted">const</span> developer = {<br><span class="code-line-number">02</span> &nbsp;name: <span class="code-string">"Phattarayus"</span>,<br><span class="code-line-number">03</span> &nbsp;focus: <span class="code-string">"build with purpose"</span>,<br><span class="code-line-number">04</span> &nbsp;learning: <span class="code-orange">true</span><br><span class="code-line-number">05</span>};<br><br><span class="code-line-number">06</span><span class="code-muted">// one idea at a time.</span></div></div>
+        <div class="art-monogram">&lt;<span>p</span>/&gt;</div><div class="floating-pill pill-bottom"><span class="spark">✧</span> Ideas → real experiences</div><span class="art-label">DESIGN. BUILD. LEARN. REPEAT.</span>
+      </div>
+    </section>
+    <div class="skills-strip"><span class="strip-label">THINGS I WORK WITH</span><div id="skills" class="skill-list"></div></div>
+    <section id="work" class="work-section" aria-labelledby="work-title"><div class="section-heading"><div><p class="eyebrow muted">01 / SELECTED WORK</p><h2 id="work-title">จากไอเดีย สู่ผลงาน<span class="accent">.</span></h2><p class="section-description">รวมโปรเจกต์ การทดลอง และสิ่งที่ได้เรียนรู้ระหว่างทาง</p></div><span id="project-count" class="count-label"></span></div>
+      <div class="work-toolbar"><div id="filters" class="filters" role="group" aria-label="กรองประเภทผลงาน"></div><label class="search-field"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="search" type="search" placeholder="ค้นหาผลงาน..." aria-label="ค้นหาผลงาน"></label></div>
+      <p id="portfolio-status" class="status-message" role="status" hidden></p><div id="projects" class="project-grid" aria-live="polite"><p class="muted">กำลังโหลดผลงาน...</p></div>
+    </section>
+    <section id="about" class="about-section" aria-labelledby="about-title"><div class="about-intro"><p class="eyebrow muted">02 / A LITTLE ABOUT ME</p><h2 id="about-title">เบื้องหลัง<br>ทุกชิ้นงาน<span class="accent">.</span></h2><div class="signature" data-name>Phattarayus</div></div><div class="about-copy"><p class="about-lead" id="name-th"></p><p id="about-text"></p><div class="about-note"><span class="note-icon" aria-hidden="true">↗</span><div><strong>ยังมีสิ่งใหม่ให้เรียนรู้เสมอ</strong><p>พอร์ตนี้เป็นบันทึกการเดินทาง และจะเติบโตไปพร้อมกับผลงานชิ้นต่อไป</p></div></div></div></section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">03 / LET’S CONNECT</p><h2 id="contact-title">ไอเดียดี ๆ เริ่มจากการพูดคุย</h2><p>แวะมาทักทาย แลกเปลี่ยนความคิด หรือดูโค้ดของผมได้ที่นี่</p></div><div id="contact-links" class="contact-links"></div></section>
+  </main>
+  <footer class="container site-footer"><a class="brand" href="./"><span class="brand-mark small">p<span>.</span></span><span data-name>Phattarayus</span></a><p>Made with curiosity & a little bit of code.</p><span>© <span id="year"></span></span></footer>
+</body></html>
