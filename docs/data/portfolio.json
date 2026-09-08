@@ -12,6 +12,23 @@
     "skills": ["Web development", "UI design", "Automation", "Learning by doing"]
   },
   "projects": [
+    {
+      "id": "egp-integration",
+      "title": "ProcureFlow · E-GP Integration",
+      "category": "Web application",
+      "description": "ระบบรวบรวมประกาศจัดซื้อจัดจ้าง ติดตามคิวซิงก์ และสรุปรายงานอีเมล พร้อมเดโม 100 ประกาศและ 10 queue",
+      "tags": ["PHP", "MariaDB", "JavaScript", "AdminLTE"],
+      "githubUrl": "https://github.com/nyequirel/myportal/tree/main/docs/demos/egp",
+      "demoUrl": "https://nyequirel.github.io/myportal/demos/egp/",
+      "featured": true,
+      "published": true,
+      "sample": false,
+      "color": "lavender",
+      "overview": "นำระบบ E-GP เดิมที่พัฒนาด้วย PHP และ MariaDB มาจัดทำเป็นเดโมสำหรับนำเสนอผลงาน โดยปรับโครงหน้าประกาศ คิวซิงก์ และรายงานอีเมลจากต้นฉบับ ใช้ชื่อ ProcureFlow พร้อมข้อมูลคัดเลือก 100 ประกาศและ 10 queue ที่ปรับชื่อหน่วยงานและรหัสอ้างอิงแล้ว",
+      "problem": "การติดตามประกาศจากหลายหน่วยงานต้องมีจุดรวมข้อมูลที่ค้นหาได้ พร้อมมองเห็นความคืบหน้าของการซิงก์และสรุปผลให้ผู้เกี่ยวข้อง",
+      "solution": "จัดหน้าค้นหาและกรองประกาศตามประเภทและหน่วยงาน แสดงสถานะคิวตั้งแต่รอดำเนินการจนถึงสำเร็จหรือรอ retry และมีฟอร์มตั้งค่ารายงานอีเมลพร้อมตัวอย่างรายงาน",
+      "outcome": "เปิดทดลองแยกเป็นโปรเจกต์บน GitHub Pages ได้ เดโมแก้ไขข้อมูลในแท็บเบราว์เซอร์และจำลองการซิงก์กับรายงานอีเมล โดยไม่เชื่อมต่อฐานข้อมูลหรือส่งอีเมลจริง"
+    },
     { "id": "sample-web", "title": "Personal portfolio", "category": "Web application", "description": "เว็บพอร์ตส่วนตัวพร้อมหน้ารายละเอียดแยกตามผลงาน และ backend สำหรับเข้าสู่ระบบด้วยรหัสผ่านและ OTP ทางอีเมล", "tags": ["HTML", "CSS", "JavaScript"], "githubUrl": "https://github.com/nyequirel/myportal", "demoUrl": "https://nyequirel.github.io/myportal/", "featured": true, "published": true, "sample": false, "color": "mint" },
     { "id": "sample-data", "title": "Data workspace", "category": "Data & automation", "description": "ตัวอย่างการนำเสนอโปรเจกต์ด้านข้อมูล เพิ่มรายละเอียดและลิงก์ผลงานจริงของคุณได้ภายหลัง", "tags": ["Data", "Dashboard"], "githubUrl": "", "demoUrl": "", "featured": false, "published": true, "sample": true, "color": "peach" },
     { "id": "sample-lab", "title": "Ideas into code", "category": "Experiments", "description": "ตัวอย่างพื้นที่รวมการทดลอง เครื่องมือเล็ก ๆ และบันทึกการเรียนรู้ระหว่างทาง", "tags": ["Tools", "Open source"], "githubUrl": "", "demoUrl": "", "featured": false, "published": true, "sample": true, "color": "lavender" }

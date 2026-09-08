@@ -32,7 +32,7 @@ function Write-Package([string]$ArchiveName, [object[]]$Files, [string]$BaseDire
 
 $staticFiles = @(Get-PackageFiles 'docs')
 foreach ($file in $staticFiles) {
-    if ($file.Name -ne '.nojekyll' -and $file.Extension -notin @('.html', '.css', '.js', '.json', '.svg', '.png', '.jpg', '.jpeg', '.webp', '.ico', '.woff', '.woff2', '.pdf')) {
+    if ($file.Name -notin @('.nojekyll', 'LICENSE.txt', 'NOTICE.txt') -and $file.Extension -notin @('.html', '.css', '.js', '.json', '.svg', '.png', '.jpg', '.jpeg', '.webp', '.ico', '.woff', '.woff2', '.pdf')) {
         throw "Unexpected file in public website: $($file.Name)"
     }
 }
