@@ -1,5 +1,13 @@
 # MyPublic — Personal portfolio
 
+เดโมระบบจัดซื้อจัดจ้างและระบบทรัพย์สินพัฒนาด้วย **Vite บน Node.js** ซอร์สอยู่ใน `apps/egp` และ `apps/computer-assets` ส่วน `docs/demos` เป็นผลลัพธ์ที่ build แล้วสำหรับ GitHub Pages
+
+```powershell
+npm.cmd run dev:egp       # เปิดระบบจัดซื้อจัดจ้างสำหรับพัฒนา
+npm.cmd run dev:assets    # เปิดระบบทรัพย์สินสำหรับพัฒนา
+npm.cmd run build:demos   # build ทั้งสองระบบไปยัง docs/demos
+```
+
 เว็บโปรไฟล์และรวมผลงาน ภาษาไทย รองรับมือถือ แยกจาก Laravel template เดิม
 
 เว็บไซต์: https://nyequirel.github.io/myportal/ · Repository: https://github.com/nyequirel/myportal
@@ -10,7 +18,8 @@ Repository นี้ตั้ง Pages เป็น **Deploy from a branch → m
 
 เริ่มใช้งานแบบสั้น ๆ ที่ [QUICKSTART.md](QUICKSTART.md) หรือดับเบิลคลิก `start-local.cmd` เพื่อเปิดเซิร์ฟเวอร์ในเครื่อง ใช้ `scripts/package.ps1` เพื่อสร้างชุด ZIP สำหรับอัปโหลดภายหลัง
 
-- `docs/` — HTML/CSS/JavaScript พร้อมเผยแพร่บน **GitHub Pages** ไม่มีขั้นตอน build
+- `apps/` — ซอร์ส Vite ของ Demo แต่ละระบบ ใช้ Node.js สำหรับพัฒนาและ build
+- `docs/` — HTML/CSS/JavaScript ที่ build แล้ว พร้อมเผยแพร่บน **GitHub Pages**
 - `server/` — backend ขนาดเล็ก ใช้ Node.js + SQLite สำหรับเจ้าของพอร์ต: รหัสผ่าน → OTP ทางอีเมล → จัดการโปรไฟล์/ผลงาน
 - `sample_template/` — Laravel ต้นฉบับ เก็บไว้ในเครื่องโดยไม่แก้ไขและไม่รวมใน Git repository ใหม่นี้
 
@@ -129,6 +138,7 @@ MAIL_FROM="MyPublic <no-reply@your-domain.example>"
 ## ตรวจสอบ
 
 ```powershell
+npm run build:demos
 npm run check
 npm test
 npm audit
@@ -144,7 +154,7 @@ npm audit
 
 - หน้าผลงาน: https://nyequirel.github.io/myportal/project.html?id=egp-integration
 - เดโม: https://nyequirel.github.io/myportal/demos/egp/
-- ไฟล์แยกโปรเจกต์อยู่ใน `docs/demos/egp/` มีหน้าภาพรวม ประกาศ คิวซิงก์ และรายงานอีเมล
+- ซอร์สแยกโปรเจกต์อยู่ใน `apps/egp/` และ build ไปยัง `docs/demos/egp/` มีหน้าภาพรวม ประกาศ คิวซิงก์ และรายงานอีเมล
 
 ปรับโครงหน้าประกาศ คิว และรายงานจากโปรเจกต์ PHP/MariaDB ที่เจ้าของให้มา โดยใช้ชื่อกลาง ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ และนำโลโก้กับชื่อหน่วยงานเดิมออก คงไฟล์ลิขสิทธิ์ของ AdminLTE, Bootstrap, jQuery และ Font Awesome ไว้ใน `vendor/` ข้อมูลเริ่มต้นคัดมา **100 ประกาศและ 10 queue รวมทุกสถานะ** ชื่อประกาศ คำอธิบาย รหัสโครงการ วันที่ วิธีจัดหา และประเภทประกาศตรงกับรายการต้นทาง โดยเปลี่ยนเฉพาะชื่อหน่วยงานและ branding ปุ่มเปิดเอกสาร 98 รายการและสาระสำคัญของสัญญา 20 รายการใช้ลิงก์สาธารณะเดียวกับต้นทางและเปิดเว็บไซต์ E-GP ภายนอกเมื่อผู้ชมคลิก รายการที่ต้นทางไม่มีลิงก์จะแสดงขีด ไม่มีการสร้างลิงก์หรือรายละเอียดทดแทน
 
@@ -158,7 +168,7 @@ npm audit
 
 - หน้าผลงาน: https://nyequirel.github.io/myportal/project.html?id=computer-assets
 - เดโม: https://nyequirel.github.io/myportal/demos/computer-assets/
-- แยกไฟล์อยู่ใน `docs/demos/computer-assets/` ใช้ Bootstrap 5.0.2 และ Bootstrap Icons 1.11.3 จากต้นทาง พร้อม JavaScript modules โดยไม่ต้อง build หรือรัน PHP บน GitHub Pages
+- ซอร์สแยกโปรเจกต์อยู่ใน `apps/computer-assets/` ใช้ Vite, Bootstrap 5.0.2 และ Bootstrap Icons 1.11.3 แล้ว build ไปยัง `docs/demos/computer-assets/` โดยไม่ต้องรัน PHP บน GitHub Pages
 
 ปรับจาก template ระบบ Laravel 11 ของเจ้าของงาน โดยนำโครงเมนู Bootstrap และ CSS เดิมมาใช้ คอลัมน์ทะเบียนกับช่องรายละเอียดถูกดึงจาก Blade views ของทั้ง 8 หมวด: คอมพิวเตอร์ โน้ตบุ๊ก แท็บเล็ต เครื่องพิมพ์ สแกนเนอร์ UPS ซอฟต์แวร์ และอุปกรณ์เครือข่าย นำโลโก้และ branding หน่วยงานออก พร้อมเก็บประกาศลิขสิทธิ์ใน `vendor/`
 

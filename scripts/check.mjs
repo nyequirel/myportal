@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { validatePortfolio } from '../server/validation.mjs';
 function files(directory) { return readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? files(resolve(directory, entry.name)) : [resolve(directory, entry.name)]); }
 const publicFiles = files('docs');
-for (const path of [...publicFiles, ...files('server'), ...files('scripts'), ...files('tests')]) {
+for (const path of [...publicFiles, ...files('apps'), ...files('server'), ...files('scripts'), ...files('tests')]) {
   if (['.js', '.mjs'].includes(extname(path))) { const result = spawnSync(process.execPath, ['--check', path], { encoding: 'utf8' }); if (result.status !== 0) throw new Error(result.stderr); }
 }
 for (const path of publicFiles) assert.ok(!/\.(env|sqlite|php)$/.test(path), `Private file in docs: ${path}`);

@@ -12,6 +12,11 @@
     "owner:create": "node --env-file-if-exists=server/.env server/create-owner.mjs",
     "test": "node --test --test-concurrency=1 tests/*.test.mjs",
     "check": "node scripts/check.mjs",
+    "dev:egp": "vite --config apps/egp/vite.config.mjs",
+    "dev:assets": "vite --config apps/computer-assets/vite.config.mjs",
+    "build:egp": "vite build --config apps/egp/vite.config.mjs",
+    "build:assets": "vite build --config apps/computer-assets/vite.config.mjs",
+    "build:demos": "npm run build:egp && npm run build:assets",
     "test:browser": "node scripts/browser-check.mjs",
     "test:egp": "node scripts/egp-browser-check.mjs",
     "test:assets": "node scripts/computer-assets-browser-check.mjs"
@@ -21,6 +26,7 @@
     "nodemailer": "^10.0.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.63.0",
+    "vite": "^8.2.2"
   }
 }

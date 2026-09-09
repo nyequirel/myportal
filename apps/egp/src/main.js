@@ -1,3 +1,5 @@
+import './demo.css';
+
 /* Portfolio demonstration. All mutations stay in this browser tab. */
 'use strict';
 (async () => {

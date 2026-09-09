@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="เดโมระบบจัดการประกาศจัดซื้อจัดจ้าง พร้อมคิวซิงก์และรายงานอีเมล"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><title>รายการประกาศ · ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ</title><link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"><link rel="stylesheet" href="/vendor/adminlte/adminlte.min.css"><script defer src="/vendor/jquery/jquery.min.js"></script><script defer src="/vendor/bootstrap/bootstrap.bundle.min.js"></script><script type="module" src="/src/main.js"></script></head>
+<body class="hold-transition sidebar-mini layout-fixed" data-page="announce"><div class="wrapper"><nav class="main-header navbar navbar-expand navbar-white navbar-light"><button id="menuToggle" class="btn btn-light mr-3" aria-label="เปิดหรือปิดเมนู" aria-expanded="false"><i class="fas fa-bars"></i></button><span class="workspace-label">PROCUREMENT WORKSPACE</span><a class="ml-auto btn btn-sm btn-outline-secondary" href="../../project.html?id=egp-integration">กลับหน้าผลงาน <i class="fas fa-arrow-right ml-1"></i></a></nav>
+<aside class="main-sidebar sidebar-dark-primary elevation-2"><a href="index.html" class="brand-link"><span class="brand-monogram" aria-hidden="true">E-GP</span><span class="brand-name">ระบบเชื่อมโยงข้อมูล<wbr>จัดซื้อจัดจ้างภาครัฐ</span></a><div class="sidebar"><div class="sidebar-caption">E-GP · PORTFOLIO DEMO</div><nav aria-label="เมนูหลัก"><ul class="nav nav-pills nav-sidebar flex-column"><li class="nav-item"><a href="index.html" class="nav-link " ><i class="nav-icon fas fa-chart-line"></i><p>ภาพรวม</p></a></li><li class="nav-item"><a href="announce.html" class="nav-link active" aria-current="page"><i class="nav-icon fas fa-bullhorn"></i><p>รายการประกาศ</p></a></li><li class="nav-item"><a href="sync.html" class="nav-link " ><i class="nav-icon fas fa-sync-alt"></i><p>คิวและการซิงก์</p></a></li><li class="nav-item"><a href="email-report.html" class="nav-link " ><i class="nav-icon fas fa-envelope-open-text"></i><p>รายงานอีเมล</p></a></li></ul></nav><div class="sidebar-note">Vite + JavaScript<br>ต้นฉบับ PHP / MariaDB<br><span>100 ประกาศ · 10 queue</span></div></div></aside>
+<main class="content-wrapper"><div class="content"><div class="container-fluid"><div class="demo-banner"><div><strong><i class="fas fa-flask mr-1"></i> โหมดสาธิต</strong><span>ข้อมูลปรับชื่อหน่วยงานแล้ว • การแก้ไขอยู่ในแท็บนี้ • การซิงก์และอีเมลเป็นการจำลอง</span></div><button id="resetDemo" class="btn btn-sm btn-outline-primary">คืนค่าตัวอย่าง</button></div><div id="loadError" role="alert"></div>
+
+
+
+<div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="mb-1"><i class="fas fa-bullhorn text-primary"></i> รายการประกาศ E-GP</h1>
+        <p class="text-muted mb-0" id="announcementDescription">ประกาศตัวอย่าง 100 รายการ คละทุกประเภทที่มีข้อมูลในหน้าต้นทาง</p>
+    </div>
+
+        <button type="button" class="btn btn-primary" id="addNewBtn"><i class="fas fa-plus"></i> เพิ่มประกาศ</button>
+
+</div>
+
+<div id="pageStatus" class="page-status"></div>
+
+<div class="card">
+    <div class="card-header">
+        <div class="form-inline">
+            <label for="announceTypeFilter" class="mr-2 mb-1 mb-sm-0"><i class="fas fa-filter mr-1"></i> ประเภทประกาศ</label>
+            <select class="form-control form-control-sm" id="announceTypeFilter">
+                <option value="">ทุกประเภทประกาศ</option>
+            </select>
+            <label for="departmentSubFilter" class="ml-sm-3 mr-2 mt-2 mt-sm-0 mb-1 mb-sm-0"><i class="fas fa-building mr-1"></i> หน่วยงานย่อย</label>
+            <select class="form-control form-control-sm" id="departmentSubFilter">
+                <option value="">ทุกหน่วยงานย่อย</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-body"><div class="search-row"><label for="announcementSearch">ค้นหาประกาศ<input id="announcementSearch" type="search" class="form-control" placeholder="ชื่อประกาศ หรือรหัสโครงการ"></label><label for="announcementPageSize">แสดงต่อหน้า<select id="announcementPageSize" class="form-control"><option>10</option><option>25</option><option>50</option><option>100</option></select></label></div>
+        <div class="table-responsive"><table class="table table-bordered table-striped" id="announce-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>ประเภท</th>
+                    <th>หน่วยงานย่อย</th>
+                    <th>วิธีการจัดหา</th>
+                    <th>ประกาศ</th>
+                    <th>วันที่</th>
+                    <th>เอกสาร</th>
+                    <th>ดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table></div><div class="table-pager"><span id="announcementSummary" aria-live="polite"></span><div><button class="btn btn-sm btn-outline-secondary" id="announcementPrevious">ก่อนหน้า</button> <button class="btn btn-sm btn-outline-secondary" id="announcementNext">ถัดไป</button></div></div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="announceModal" role="dialog" aria-labelledby="announceModalTitle" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <form class="modal-content" id="announceForm">
+            <div class="modal-header">
+                <h5 class="modal-title" id="announceModalTitle">เพิ่มประกาศ</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="ปิด"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="announce_id" id="announceId">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="announceType">ประเภทประกาศ <span class="text-danger">*</span></label>
+                        <select class="form-control" name="anounceType" id="announceType" required></select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="methodId">วิธีการจัดหา</label>
+                        <select class="form-control" name="methodId" id="methodId"><option value="">ไม่ระบุ</option></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="announceTitle">ชื่อประกาศ <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="title" id="announceTitle" maxlength="1000" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">รายละเอียด <span class="text-danger">*</span></label>
+                    <textarea class="form-control" name="description" id="description" rows="3" required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="pubDate">วันที่ประกาศ <span class="text-danger">*</span></label>
+                        <input type="date" class="form-control" name="pubDate" id="pubDate" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="projectId">รหัสโครงการ</label>
+                        <input type="text" class="form-control" name="projectId" id="projectId" maxlength="64">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="documentLink">URL เอกสาร</label>
+                    <input type="url" class="form-control" name="link" id="documentLink" maxlength="2048" placeholder="ลิงก์เอกสารประกาศจาก E-GP">
+                    <div id="sourceDocumentLinks" class="mt-2"></div>
+                    <small class="form-text text-muted">ปุ่มเอกสารเปิดเว็บไซต์ E-GP ภายนอก</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                <button type="submit" class="btn btn-primary" id="saveBtn"><i class="fas fa-save"></i> บันทึก</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</div></div></main><footer class="main-footer"><strong>ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ</strong> · E-GP integration demo <span class="float-right">Portfolio / Nyequirel</span></footer></div></body></html>

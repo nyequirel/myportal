@@ -1,0 +1,29 @@
+ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ - E-GP portfolio demonstration
+
+Announcement, synchronization and email report page markup adapted from the
+owner-provided PHP application. The dashboard, neutral navigation shell and
+browser-only behavior were created for the portfolio. No original PHP service,
+database configuration, directory authentication, logos, logs or workers ship
+with this static demonstration.
+
+The initial dataset contains exactly 100 announcements and 10 queues. Agency
+names and organizational branding were replaced. Announcement descriptions,
+project IDs, dates and public document/contract links match their source records.
+Public links open the external E-GP website only when clicked. Internal system
+connection details are excluded. Changes are stored only in the current browser tab.
+Synchronization and email actions are simulated and do not contact the source.
+
+Third-party assets copied from the source application:
+- AdminLTE 3.2.0 by ColorlibHQ: MIT, see vendor/adminlte/LICENSE.txt.
+- Bootstrap 4: MIT, copyright The Bootstrap Authors. License notice retained
+  in vendor/bootstrap/bootstrap.bundle.min.js; see vendor/bootstrap/LICENSE.txt.
+- jQuery: MIT, copyright OpenJS Foundation and other contributors.
+  License notice retained in vendor/jquery/jquery.min.js; see vendor/jquery/LICENSE.txt.
+- Font Awesome Free 5.15.4 by Fonticons, Inc.:
+  icons CC BY 4.0, fonts SIL OFL 1.1, code MIT.
+  See vendor/fontawesome/LICENSE.txt; original code notice retained.
+  Font CSS adapted to use the included WOFF2 files only.
+  https://fontawesome.com/license/free
+
+Third-party license and attribution notices are retained; organizational
+branding from the application is not included.

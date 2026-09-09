@@ -1,5 +1,7 @@
 # เริ่มใช้งาน MyPublic
 
+ซอร์ส Demo แบบ Vite อยู่ใน `apps/egp` และ `apps/computer-assets` เมื่อต้องการสร้างไฟล์สำหรับ GitHub Pages ให้รัน `npm.cmd run build:demos`
+
 เว็บไซต์จริง: https://nyequirel.github.io/myportal/ · Repository: https://github.com/nyequirel/myportal
 
 สำหรับ repository นี้ตั้งค่า Pages เป็น **Deploy from a branch → main → /docs** แล้ว อัปเดตข้อมูลสาธารณะใน `docs` และ push ไป `main` เพื่อเผยแพร่รุ่นใหม่

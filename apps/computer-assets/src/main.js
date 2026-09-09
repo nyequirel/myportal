@@ -1,3 +1,6 @@
+import './source-layout.css';
+import './demo.css';
+
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels = {normal:'ปกติ',replace:'ทดแทน',dispose:'จำหน่าย'};

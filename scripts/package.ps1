@@ -6,6 +6,14 @@ $releaseDir = Join-Path $projectRoot 'releases'
 New-Item -ItemType Directory -Path $releaseDir -Force | Out-Null
 $releaseId = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
 
+Push-Location $projectRoot
+try {
+    & npm.cmd run build:demos
+    if ($LASTEXITCODE -ne 0) { throw 'Vite demo build failed.' }
+} finally {
+    Pop-Location
+}
+
 function Get-PackageFiles([string]$RelativeDirectory) {
     $directory = Join-Path $projectRoot $RelativeDirectory
     $items = Get-ChildItem -LiteralPath $directory -Recurse -Force
@@ -37,7 +45,7 @@ foreach ($file in $staticFiles) {
     }
 }
 $sourceFiles = @($staticFiles)
-foreach ($folder in @('scripts', 'tests', '.github')) { $sourceFiles += @(Get-PackageFiles $folder) }
+foreach ($folder in @('apps', 'scripts', 'tests', '.github')) { $sourceFiles += @(Get-PackageFiles $folder) }
 # Explicit server allowlist: no database, outbox, log files, or local environment.
 $sourceFiles += @(Get-ChildItem -LiteralPath (Join-Path $projectRoot 'server') -File -Force | Where-Object { $_.Extension -eq '.mjs' -or $_.Name -eq '.env.example' })
 foreach ($name in @('package.json', 'package-lock.json', 'README.md', 'QUICKSTART.md', '.gitignore', 'start-local.cmd')) {

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="เดโมระบบจัดการประกาศจัดซื้อจัดจ้าง พร้อมคิวซิงก์และรายงานอีเมล"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><title>คิวและการซิงก์ · ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ</title><link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"><link rel="stylesheet" href="/vendor/adminlte/adminlte.min.css"><script defer src="/vendor/jquery/jquery.min.js"></script><script defer src="/vendor/bootstrap/bootstrap.bundle.min.js"></script><script type="module" src="/src/main.js"></script></head>
+<body class="hold-transition sidebar-mini layout-fixed" data-page="sync"><div class="wrapper"><nav class="main-header navbar navbar-expand navbar-white navbar-light"><button id="menuToggle" class="btn btn-light mr-3" aria-label="เปิดหรือปิดเมนู" aria-expanded="false"><i class="fas fa-bars"></i></button><span class="workspace-label">PROCUREMENT WORKSPACE</span><a class="ml-auto btn btn-sm btn-outline-secondary" href="../../project.html?id=egp-integration">กลับหน้าผลงาน <i class="fas fa-arrow-right ml-1"></i></a></nav>
+<aside class="main-sidebar sidebar-dark-primary elevation-2"><a href="index.html" class="brand-link"><span class="brand-monogram" aria-hidden="true">E-GP</span><span class="brand-name">ระบบเชื่อมโยงข้อมูล<wbr>จัดซื้อจัดจ้างภาครัฐ</span></a><div class="sidebar"><div class="sidebar-caption">E-GP · PORTFOLIO DEMO</div><nav aria-label="เมนูหลัก"><ul class="nav nav-pills nav-sidebar flex-column"><li class="nav-item"><a href="index.html" class="nav-link " ><i class="nav-icon fas fa-chart-line"></i><p>ภาพรวม</p></a></li><li class="nav-item"><a href="announce.html" class="nav-link " ><i class="nav-icon fas fa-bullhorn"></i><p>รายการประกาศ</p></a></li><li class="nav-item"><a href="sync.html" class="nav-link active" aria-current="page"><i class="nav-icon fas fa-sync-alt"></i><p>คิวและการซิงก์</p></a></li><li class="nav-item"><a href="email-report.html" class="nav-link " ><i class="nav-icon fas fa-envelope-open-text"></i><p>รายงานอีเมล</p></a></li></ul></nav><div class="sidebar-note">Vite + JavaScript<br>ต้นฉบับ PHP / MariaDB<br><span>100 ประกาศ · 10 queue</span></div></div></aside>
+<main class="content-wrapper"><div class="content"><div class="container-fluid"><div class="demo-banner"><div><strong><i class="fas fa-flask mr-1"></i> โหมดสาธิต</strong><span>ข้อมูลปรับชื่อหน่วยงานแล้ว • การแก้ไขอยู่ในแท็บนี้ • การซิงก์และอีเมลเป็นการจำลอง</span></div><button id="resetDemo" class="btn btn-sm btn-outline-primary">คืนค่าตัวอย่าง</button></div><div id="loadError" role="alert"></div>
+
+
+<div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+    <div>
+        <h1 class="mb-1"><i class="fas fa-sync-alt text-success"></i> ซิงก์ข้อมูล E-GP</h1>
+        <p class="text-muted mb-0">สร้างคิวและประมวลผลตามช่วงวันที่ที่เลือก</p>
+    </div>
+    <span class="badge badge-info p-2"><i class="far fa-clock"></i> จำลองการทำงานในเบราว์เซอร์</span>
+</div>
+
+
+
+<div class="card card-primary card-outline">
+    <div class="card-header"><h3 class="card-title"><i class="fas fa-robot mr-1"></i> คิวอัตโนมัติ</h3><div class="card-tools"><span class="badge badge-primary">ตัวอย่าง 10 queue</span></div></div>
+    <div class="card-body">
+        <div class="row text-center">
+            <div class="col-6 col-md queue-count active" data-queue-status="pending" role="button" tabindex="0"><strong class="d-block h4" id="autoPending">-</strong><span class="text-muted">รอดำเนินการ</span></div>
+            <div class="col-6 col-md queue-count" data-queue-status="running" role="button" tabindex="0"><strong class="d-block h4 text-info" id="autoRunning">-</strong><span class="text-muted">กำลังทำงาน</span></div>
+            <div class="col-6 col-md queue-count" data-queue-status="retry_wait" role="button" tabindex="0"><strong class="d-block h4 text-warning" id="autoRetry">-</strong><span class="text-muted">รอ retry</span></div>
+            <div class="col-6 col-md queue-count" data-queue-status="completed" role="button" tabindex="0"><strong class="d-block h4 text-success" id="autoCompleted">-</strong><span class="text-muted">สำเร็จ</span></div>
+            <div class="col-6 col-md queue-count" data-queue-status="failed" role="button" tabindex="0"><strong class="d-block h4 text-danger" id="autoFailed">-</strong><span class="text-muted">ล้มเหลว</span></div>
+        </div>
+        <div class="small text-muted mt-3" id="autoQueueMeta">กำลังโหลดสถานะคิว...</div>
+        <hr>
+        <div class="form-row align-items-end">
+            <div class="form-group col-md-4 mb-md-0">
+                <label for="backfillStartDate">เริ่มดึงข้อมูลย้อนหลังตั้งแต่</label>
+                <input type="date" class="form-control" id="backfillStartDate" min="2008-01-01" max="" value="">
+            </div>
+            <div class="form-group col-md-4 mb-md-0">
+                <button class="btn btn-primary btn-block" id="createBackfillBtn" ><i class="fas fa-history mr-1"></i> จำลองคิวย้อนหลัง 10 งาน</button>
+            </div>
+            <div class="form-group col-md-4 mb-0">
+                <small class="text-muted">จัดชุดคิวตัวอย่างใหม่ 10 งานตามวันเริ่มต้น โดยแทนที่ชุดเดิม</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-info card-outline">
+    <div class="card-header d-flex flex-wrap align-items-center">
+        <h3 class="card-title mr-auto"><i class="fas fa-tasks mr-1"></i> รายการคิวอัตโนมัติ</h3>
+        <div class="form-inline mt-2 mt-sm-0">
+            <label class="sr-only" for="automaticQueueStatus">สถานะคิว</label>
+            <select class="form-control form-control-sm mr-2" id="automaticQueueStatus">
+                <option value="">ทุกสถานะ</option><option value="pending">รอดำเนินการ</option>
+                <option value="running">กำลังทำงาน</option>
+                <option value="retry_wait">รอ retry</option>
+                <option value="completed">สำเร็จ</option>
+                <option value="failed">ล้มเหลว</option>
+            </select>
+            <button type="button" class="btn btn-sm btn-outline-info" id="refreshAutomaticQueueBtn"><i class="fas fa-sync-alt mr-1"></i> รีเฟรช</button>
+        </div>
+    </div>
+    <div class="card-body table-responsive p-0">
+        <table class="table table-sm table-hover table-bordered automatic-queue-table mb-0">
+            <thead class="thead-light"><tr><th>#</th><th>วันที่</th><th>หน่วยงานย่อย</th><th>ประเภท</th><th>วิธี</th><th>สถานะ</th><th>ครั้งที่ทำ</th><th>ผลลัพธ์/เพิ่มใหม่</th><th>เวลาที่เกี่ยวข้อง</th><th>รายละเอียด</th></tr></thead>
+            <tbody id="automaticQueueBody"><tr><td colspan="10" class="text-center text-muted py-4">กำลังโหลดรายการคิว...</td></tr></tbody>
+        </table>
+    </div>
+    <div class="card-footer d-flex flex-wrap align-items-center justify-content-between">
+        <span class="small text-muted" id="automaticQueueSummary">-</span>
+        <div>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="automaticQueuePrevious" disabled><i class="fas fa-chevron-left"></i> ก่อนหน้า</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary ml-1" id="automaticQueueNext" disabled>ถัดไป <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="automaticQueueDetailModal" tabindex="-1" role="dialog" aria-labelledby="automaticQueueDetailTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="automaticQueueDetailTitle">รายละเอียดผลการทำงาน</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="ปิด"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div id="automaticQueueDetailMeta" class="small text-muted mb-2"></div>
+                <div id="automaticQueueHtmlNotice" class="alert alert-info py-2 d-none">
+                    แสดงตัวอย่างหน้า HTML ในโหมดปลอดภัย (ไม่อนุญาตสคริปต์ ฟอร์ม หรือการเชื่อมต่อภายนอก)
+                </div>
+                <iframe id="automaticQueueDetailPreview" class="queue-detail-preview d-none" sandbox referrerpolicy="no-referrer" title="ตัวอย่างรายละเอียด HTML"></iframe>
+                <pre id="automaticQueueDetailSource" class="queue-detail-source bg-light border rounded p-3 mb-0"></pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary mr-auto d-none" id="toggleAutomaticQueueDetailView">ดูข้อความต้นฉบับ</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-success card-outline">
+    <div class="card-body">
+        <div class="form-row align-items-end">
+            <div class="form-group col-md-6">
+                <label for="departmentSub">หน่วยงานที่ต้องการซิงก์</label>
+                <select class="form-control" id="departmentSub" disabled><option value="">กำลังโหลดหน่วยงาน...</option></select>
+            </div>
+            <div class="form-group col-md-3"><label for="startDate">วันที่เริ่มต้น</label><input type="date" class="form-control" id="startDate" value=""></div>
+            <div class="form-group col-md-3"><label for="endDate">วันที่สิ้นสุด</label><input type="date" class="form-control" id="endDate" value=""></div>
+            <div class="form-group col-md-3"><div class="custom-control custom-checkbox mt-2"><input type="checkbox" class="custom-control-input" id="includeMethods" checked disabled><label class="custom-control-label" for="includeMethods">แยกตามวิธีจัดหา (จำเป็น)</label></div><small class="text-muted">สาธิตคิวแยกประเภทและวิธีจัดหา</small></div>
+            <div class="form-group col-md-3"><button class="btn btn-info btn-block" id="buildQueueBtn"><i class="fas fa-list"></i> สร้างคิว</button></div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center">
+            <button class="btn btn-success mr-2" id="startSyncBtn" ><i class="fas fa-play"></i> เริ่มซิงก์</button>
+            <button class="btn btn-danger mr-3" id="stopSyncBtn" disabled><i class="fas fa-stop"></i> หยุด</button>
+            <span id="queueSummary" class="text-muted">ยังไม่ได้สร้างคิว</span>
+        </div>
+    </div>
+</div>
+
+<div id="syncMessage"></div>
+<div class="card">
+    <div class="card-header"><h3 class="card-title">คิวประมวลผล</h3></div>
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover table-bordered sync-table mb-0">
+            <thead class="thead-dark"><tr><th>#</th><th>วันที่</th><th>ประเภท</th><th>วิธี</th><th>สถานะ</th><th>อ้างอิง</th></tr></thead>
+            <tbody id="queueBody"><tr><td colspan="6" class="text-center text-muted py-4">เลือกวันที่แล้วกด “สร้างคิว”</td></tr></tbody>
+        </table>
+    </div>
+</div>
+<div class="card"><div class="card-header"><h3 class="card-title">บันทึกการทำงาน</h3></div><div class="card-body"><div id="syncLog" class="sync-log">พร้อมทำงาน</div></div></div>
+
+</div></div></main><footer class="main-footer"><strong>ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ</strong> · E-GP integration demo <span class="float-right">Portfolio / Nyequirel</span></footer></div></body></html>
