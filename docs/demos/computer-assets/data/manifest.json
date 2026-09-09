@@ -1,0 +1,9 @@
+{
+  "demo": true,
+  "datasetVersion": "computer-assets-demo-v1",
+  "dataMode": "synthetic",
+  "assetCount": 80,
+  "categoryCount": 8,
+  "referenceYear": 2569,
+  "note": "ข้อมูลสมมติทั้งหมด ช่องรายละเอียดและคอลัมน์ปรับจาก template ต้นทาง ไม่มีข้อมูลบุคลากรหรือทะเบียนเครื่องจริง"
+}

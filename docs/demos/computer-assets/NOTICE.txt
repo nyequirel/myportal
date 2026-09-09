@@ -1,0 +1,26 @@
+ระบบครุภัณฑ์คอมพิวเตอร์ - Portfolio demonstration
+
+Derived from the owner's Laravel 11 application. The Bootstrap 5 navigation
+layout and original default-config.css are adapted for static hosting. Table
+columns and form fields for all eight equipment categories were extracted
+from the original Blade views. The browser interactions and reports were
+implemented for this demonstration.
+
+All 80 initial records are synthetic, with ten per equipment category. Names,
+asset numbers, phone extensions, IP/MAC addresses and equipment assignments
+are examples. No original personnel records, device inventory, credentials,
+environment files, database, application logs or directory authentication
+configuration are included. Organizational logos and branding are omitted.
+
+Edits persist in the current tab's sessionStorage. Reset restores the initial
+sample. Reports use the displayed data, with explicitly illustrative age and
+status criteria, not the production application's configurable score model.
+CSV exports contain the filtered sample data. No backend requests or real
+authentication are performed. Production use requires a separately hosted
+backend such as the original Laravel application.
+
+Third-party assets copied from the original application:
+- Bootstrap 5.0.2, copyright The Bootstrap Authors, MIT.
+  See vendor/bootstrap/LICENSE.txt; original notices retained.
+- Bootstrap Icons 1.11.3, copyright The Bootstrap Authors, MIT.
+  See vendor/icons/LICENSE.txt; original notices retained.

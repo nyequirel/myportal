@@ -13,7 +13,8 @@
     "test": "node --test --test-concurrency=1 tests/*.test.mjs",
     "check": "node scripts/check.mjs",
     "test:browser": "node scripts/browser-check.mjs",
-    "test:egp": "node scripts/egp-browser-check.mjs"
+    "test:egp": "node scripts/egp-browser-check.mjs",
+    "test:assets": "node scripts/computer-assets-browser-check.mjs"
   },
   "dependencies": {
     "express": "^5.1.0",

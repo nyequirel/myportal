@@ -13,6 +13,22 @@
   },
   "projects": [
     {
+      "id": "computer-assets",
+      "title": "ระบบครุภัณฑ์คอมพิวเตอร์",
+      "category": "Web application",
+      "description": "ทะเบียนครุภัณฑ์คอมพิวเตอร์ 8 หมวด พร้อมสเปก ผู้ใช้งาน สถานะ และรายงานเพื่อวางแผนทดแทน",
+      "tags": ["Laravel", "Bootstrap 5", "JavaScript"],
+      "githubUrl": "https://github.com/nyequirel/myportal/tree/main/docs/demos/computer-assets",
+      "demoUrl": "https://nyequirel.github.io/myportal/demos/computer-assets/",
+      "featured": true,
+      "published": true,
+      "sample": false,
+      "color": "peach",
+      "overview": "แยก template จากระบบ Laravel 11 โดยใช้ Bootstrap 5 เดิมและ JavaScript สำหรับเดโมบน GitHub Pages ครอบคลุมคอมพิวเตอร์ โน้ตบุ๊ก แท็บเล็ต เครื่องพิมพ์ สแกนเนอร์ เครื่องสำรองไฟฟ้า ซอฟต์แวร์ และอุปกรณ์เครือข่าย ข้อมูลสาธิตเป็นข้อมูลสมมติ 80 รายการ หมวดละ 10 รายการ โดยคงช่องสเปกและรายละเอียดจาก template เดิม",
+      "problem": "รวบรวมทะเบียนครุภัณฑ์หลายประเภทให้ค้นหาข้อมูลเครื่อง ผู้ใช้งาน หน่วยงาน และสถานะได้ในที่เดียว พร้อมมองเห็นอายุครุภัณฑ์สำหรับวางแผนทดแทน",
+      "solution": "นำคอลัมน์ทะเบียนและช่องรายละเอียดจาก Blade template มาใช้ในเดโม เพิ่มการค้นหา กรอง จัดเรียง เปิดรายละเอียด และบันทึกการแก้ไขในแท็บเบราว์เซอร์ พร้อมส่งออก CSV และรายงานอายุ/สถานะที่คำนวณจากข้อมูลชุดเดียวกัน เกณฑ์เสนอทดแทนในเดโมเป็นเกณฑ์สาธิต ส่วนระบบฐานข้อมูลและสิทธิ์ผู้ใช้จริงยังเป็นหน้าที่ของ Laravel backend"
+    },
+    {
       "id": "egp-integration",
       "title": "ระบบเชื่อมโยงข้อมูลจัดซื้อจัดจ้างภาครัฐ",
       "category": "Web application",
