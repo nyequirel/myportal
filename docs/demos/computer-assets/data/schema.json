@@ -205,7 +205,8 @@
         "key": "storage_gb",
         "label": "ความจุ Storage (GB)"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "computer_laptop",
@@ -413,7 +414,8 @@
         "key": "storage_gb",
         "label": "ความจุ Storage (GB)"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "tablet",
@@ -528,7 +530,8 @@
         "key": "acquisition",
         "label": "การได้มา"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "printer",
@@ -661,7 +664,8 @@
         "key": "acquisition",
         "label": "การได้มา"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "scanner",
@@ -794,7 +798,8 @@
         "key": "acquisition",
         "label": "การได้มา"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "ups",
@@ -918,7 +923,8 @@
         "key": "acquisition",
         "label": "การได้มา"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "software",
@@ -1037,7 +1043,8 @@
         "key": "device_type",
         "label": "ประเภทซอฟต์แวร์"
       }
-    ]
+    ],
+    "group": "it"
   },
   {
     "id": "system_device",
@@ -1151,6 +1158,858 @@
       {
         "key": "acquisition",
         "label": "การได้มา"
+      }
+    ],
+    "group": "it"
+  },
+  {
+    "id": "office_desk",
+    "name": "โต๊ะสำนักงาน",
+    "icon": "table",
+    "group": "office",
+    "headers": [
+      "#",
+      "เลขครุภัณฑ์",
+      "ชื่อทรัพย์สิน",
+      "จัดการ",
+      "ปีที่ได้มา (พ.ศ.)",
+      "ยี่ห้อ / ผู้ผลิต",
+      "รุ่น / แบบ",
+      "วัสดุ",
+      "ขนาด กว้าง × ลึก × สูง (ซม.)",
+      "สี",
+      "จำนวนลิ้นชัก",
+      "อาคาร / ห้อง / จุดติดตั้ง",
+      "ผู้รับผิดชอบ",
+      "หน่วยงาน",
+      "สถานะ"
+    ],
+    "columns": [
+      {
+        "key": "id",
+        "label": "#"
+      },
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "actions",
+        "label": "จัดการ"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "material",
+        "label": "วัสดุ"
+      },
+      {
+        "key": "dimensions",
+        "label": "ขนาด กว้าง × ลึก × สูง (ซม.)"
+      },
+      {
+        "key": "color",
+        "label": "สี"
+      },
+      {
+        "key": "drawers",
+        "label": "จำนวนลิ้นชัก"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      }
+    ],
+    "fields": [
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "serial_number",
+        "label": "หมายเลขประจำเครื่อง / รายการ"
+      },
+      {
+        "key": "purchase_price",
+        "label": "ราคาซื้อ (บาท)",
+        "input": "number"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "aduser_tel",
+        "label": "หมายเลขโทรศัพท์"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "division_sub_id",
+        "label": "ส่วน/ฝ่าย"
+      },
+      {
+        "key": "warranty_end",
+        "label": "วันสิ้นสุดการรับประกัน",
+        "input": "date"
+      },
+      {
+        "key": "material",
+        "label": "วัสดุ"
+      },
+      {
+        "key": "dimensions",
+        "label": "ขนาด กว้าง × ลึก × สูง (ซม.)"
+      },
+      {
+        "key": "color",
+        "label": "สี"
+      },
+      {
+        "key": "drawers",
+        "label": "จำนวนลิ้นชัก",
+        "input": "number"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      },
+      {
+        "key": "acquisition",
+        "label": "การได้มา"
+      },
+      {
+        "key": "note_description",
+        "label": "หมายเหตุ"
+      }
+    ]
+  },
+  {
+    "id": "office_chair",
+    "name": "เก้าอี้สำนักงาน",
+    "icon": "person-workspace",
+    "group": "office",
+    "headers": [
+      "#",
+      "เลขครุภัณฑ์",
+      "ชื่อทรัพย์สิน",
+      "จัดการ",
+      "ปีที่ได้มา (พ.ศ.)",
+      "ยี่ห้อ / ผู้ผลิต",
+      "รุ่น / แบบ",
+      "วัสดุ / ผ้าหุ้ม",
+      "ชนิดเก้าอี้",
+      "การปรับระดับ",
+      "สี",
+      "อาคาร / ห้อง / จุดติดตั้ง",
+      "ผู้รับผิดชอบ",
+      "หน่วยงาน",
+      "สถานะ"
+    ],
+    "columns": [
+      {
+        "key": "id",
+        "label": "#"
+      },
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "actions",
+        "label": "จัดการ"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "material",
+        "label": "วัสดุ / ผ้าหุ้ม"
+      },
+      {
+        "key": "chair_type",
+        "label": "ชนิดเก้าอี้"
+      },
+      {
+        "key": "adjustment",
+        "label": "การปรับระดับ"
+      },
+      {
+        "key": "color",
+        "label": "สี"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      }
+    ],
+    "fields": [
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "serial_number",
+        "label": "หมายเลขประจำเครื่อง / รายการ"
+      },
+      {
+        "key": "purchase_price",
+        "label": "ราคาซื้อ (บาท)",
+        "input": "number"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "aduser_tel",
+        "label": "หมายเลขโทรศัพท์"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "division_sub_id",
+        "label": "ส่วน/ฝ่าย"
+      },
+      {
+        "key": "warranty_end",
+        "label": "วันสิ้นสุดการรับประกัน",
+        "input": "date"
+      },
+      {
+        "key": "material",
+        "label": "วัสดุ / ผ้าหุ้ม"
+      },
+      {
+        "key": "chair_type",
+        "label": "ชนิดเก้าอี้"
+      },
+      {
+        "key": "adjustment",
+        "label": "การปรับระดับ"
+      },
+      {
+        "key": "color",
+        "label": "สี"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      },
+      {
+        "key": "acquisition",
+        "label": "การได้มา"
+      },
+      {
+        "key": "note_description",
+        "label": "หมายเหตุ"
+      }
+    ]
+  },
+  {
+    "id": "filing_cabinet",
+    "name": "ตู้เอกสาร",
+    "icon": "archive",
+    "group": "office",
+    "headers": [
+      "#",
+      "เลขครุภัณฑ์",
+      "ชื่อทรัพย์สิน",
+      "จัดการ",
+      "ปีที่ได้มา (พ.ศ.)",
+      "ยี่ห้อ / ผู้ผลิต",
+      "รุ่น / แบบ",
+      "วัสดุ",
+      "ขนาด กว้าง × ลึก × สูง (ซม.)",
+      "จำนวนชั้น / ลิ้นชัก",
+      "ระบบล็อก",
+      "อาคาร / ห้อง / จุดติดตั้ง",
+      "ผู้รับผิดชอบ",
+      "หน่วยงาน",
+      "สถานะ"
+    ],
+    "columns": [
+      {
+        "key": "id",
+        "label": "#"
+      },
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "actions",
+        "label": "จัดการ"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "material",
+        "label": "วัสดุ"
+      },
+      {
+        "key": "dimensions",
+        "label": "ขนาด กว้าง × ลึก × สูง (ซม.)"
+      },
+      {
+        "key": "shelves",
+        "label": "จำนวนชั้น / ลิ้นชัก"
+      },
+      {
+        "key": "lock_type",
+        "label": "ระบบล็อก"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      }
+    ],
+    "fields": [
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "serial_number",
+        "label": "หมายเลขประจำเครื่อง / รายการ"
+      },
+      {
+        "key": "purchase_price",
+        "label": "ราคาซื้อ (บาท)",
+        "input": "number"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "aduser_tel",
+        "label": "หมายเลขโทรศัพท์"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "division_sub_id",
+        "label": "ส่วน/ฝ่าย"
+      },
+      {
+        "key": "warranty_end",
+        "label": "วันสิ้นสุดการรับประกัน",
+        "input": "date"
+      },
+      {
+        "key": "material",
+        "label": "วัสดุ"
+      },
+      {
+        "key": "dimensions",
+        "label": "ขนาด กว้าง × ลึก × สูง (ซม.)"
+      },
+      {
+        "key": "shelves",
+        "label": "จำนวนชั้น / ลิ้นชัก",
+        "input": "number"
+      },
+      {
+        "key": "lock_type",
+        "label": "ระบบล็อก"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      },
+      {
+        "key": "acquisition",
+        "label": "การได้มา"
+      },
+      {
+        "key": "note_description",
+        "label": "หมายเหตุ"
+      }
+    ]
+  },
+  {
+    "id": "air_conditioner",
+    "name": "เครื่องปรับอากาศ",
+    "icon": "snow",
+    "group": "office",
+    "headers": [
+      "#",
+      "เลขครุภัณฑ์",
+      "ชื่อทรัพย์สิน",
+      "จัดการ",
+      "ปีที่ได้มา (พ.ศ.)",
+      "ยี่ห้อ / ผู้ผลิต",
+      "รุ่น / แบบ",
+      "ขนาดความเย็น (BTU)",
+      "ชนิดเครื่องปรับอากาศ",
+      "ฉลากประหยัดไฟ",
+      "วันที่บำรุงรักษาล่าสุด",
+      "อาคาร / ห้อง / จุดติดตั้ง",
+      "ผู้รับผิดชอบ",
+      "หน่วยงาน",
+      "สถานะ"
+    ],
+    "columns": [
+      {
+        "key": "id",
+        "label": "#"
+      },
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "actions",
+        "label": "จัดการ"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "cooling_btu",
+        "label": "ขนาดความเย็น (BTU)"
+      },
+      {
+        "key": "aircon_type",
+        "label": "ชนิดเครื่องปรับอากาศ"
+      },
+      {
+        "key": "energy_label",
+        "label": "ฉลากประหยัดไฟ"
+      },
+      {
+        "key": "last_service",
+        "label": "วันที่บำรุงรักษาล่าสุด"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      }
+    ],
+    "fields": [
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "serial_number",
+        "label": "หมายเลขประจำเครื่อง / รายการ"
+      },
+      {
+        "key": "purchase_price",
+        "label": "ราคาซื้อ (บาท)",
+        "input": "number"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "aduser_tel",
+        "label": "หมายเลขโทรศัพท์"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "division_sub_id",
+        "label": "ส่วน/ฝ่าย"
+      },
+      {
+        "key": "warranty_end",
+        "label": "วันสิ้นสุดการรับประกัน",
+        "input": "date"
+      },
+      {
+        "key": "cooling_btu",
+        "label": "ขนาดความเย็น (BTU)",
+        "input": "number"
+      },
+      {
+        "key": "aircon_type",
+        "label": "ชนิดเครื่องปรับอากาศ"
+      },
+      {
+        "key": "energy_label",
+        "label": "ฉลากประหยัดไฟ"
+      },
+      {
+        "key": "last_service",
+        "label": "วันที่บำรุงรักษาล่าสุด",
+        "input": "date"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      },
+      {
+        "key": "acquisition",
+        "label": "การได้มา"
+      },
+      {
+        "key": "note_description",
+        "label": "หมายเหตุ"
+      }
+    ]
+  },
+  {
+    "id": "projector",
+    "name": "เครื่องฉายภาพ",
+    "icon": "projector",
+    "group": "office",
+    "headers": [
+      "#",
+      "เลขครุภัณฑ์",
+      "ชื่อทรัพย์สิน",
+      "จัดการ",
+      "ปีที่ได้มา (พ.ศ.)",
+      "ยี่ห้อ / ผู้ผลิต",
+      "รุ่น / แบบ",
+      "ความสว่าง (ANSI Lumens)",
+      "ความละเอียด",
+      "การเชื่อมต่อ",
+      "ชั่วโมงการใช้งานหลอดภาพ",
+      "อาคาร / ห้อง / จุดติดตั้ง",
+      "ผู้รับผิดชอบ",
+      "หน่วยงาน",
+      "สถานะ"
+    ],
+    "columns": [
+      {
+        "key": "id",
+        "label": "#"
+      },
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "actions",
+        "label": "จัดการ"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "brightness_lumens",
+        "label": "ความสว่าง (ANSI Lumens)"
+      },
+      {
+        "key": "resolution",
+        "label": "ความละเอียด"
+      },
+      {
+        "key": "connection",
+        "label": "การเชื่อมต่อ"
+      },
+      {
+        "key": "lamp_hours",
+        "label": "ชั่วโมงการใช้งานหลอดภาพ"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      }
+    ],
+    "fields": [
+      {
+        "key": "asset_number",
+        "label": "เลขครุภัณฑ์"
+      },
+      {
+        "key": "asset_name",
+        "label": "ชื่อทรัพย์สิน"
+      },
+      {
+        "key": "year",
+        "label": "ปีที่ได้มา (พ.ศ.)"
+      },
+      {
+        "key": "pc_brand",
+        "label": "ยี่ห้อ / ผู้ผลิต"
+      },
+      {
+        "key": "pc_model",
+        "label": "รุ่น / แบบ"
+      },
+      {
+        "key": "serial_number",
+        "label": "หมายเลขประจำเครื่อง / รายการ"
+      },
+      {
+        "key": "purchase_price",
+        "label": "ราคาซื้อ (บาท)",
+        "input": "number"
+      },
+      {
+        "key": "location",
+        "label": "อาคาร / ห้อง / จุดติดตั้ง"
+      },
+      {
+        "key": "pc_user",
+        "label": "ผู้รับผิดชอบ"
+      },
+      {
+        "key": "aduser_tel",
+        "label": "หมายเลขโทรศัพท์"
+      },
+      {
+        "key": "division_id",
+        "label": "หน่วยงาน"
+      },
+      {
+        "key": "division_sub_id",
+        "label": "ส่วน/ฝ่าย"
+      },
+      {
+        "key": "warranty_end",
+        "label": "วันสิ้นสุดการรับประกัน",
+        "input": "date"
+      },
+      {
+        "key": "brightness_lumens",
+        "label": "ความสว่าง (ANSI Lumens)",
+        "input": "number"
+      },
+      {
+        "key": "resolution",
+        "label": "ความละเอียด"
+      },
+      {
+        "key": "connection",
+        "label": "การเชื่อมต่อ"
+      },
+      {
+        "key": "lamp_hours",
+        "label": "ชั่วโมงการใช้งานหลอดภาพ",
+        "input": "number"
+      },
+      {
+        "key": "status",
+        "label": "สถานะ"
+      },
+      {
+        "key": "acquisition",
+        "label": "การได้มา"
+      },
+      {
+        "key": "note_description",
+        "label": "หมายเหตุ"
       }
     ]
   }

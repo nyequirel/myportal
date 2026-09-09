@@ -1,9 +1,11 @@
 {
   "demo": true,
-  "datasetVersion": "computer-assets-demo-v1",
+  "datasetVersion": "office-assets-demo-v2",
   "dataMode": "synthetic",
-  "assetCount": 80,
-  "categoryCount": 8,
+  "assetCount": 130,
+  "categoryCount": 13,
   "referenceYear": 2569,
-  "note": "ข้อมูลสมมติทั้งหมด ช่องรายละเอียดและคอลัมน์ปรับจาก template ต้นทาง ไม่มีข้อมูลบุคลากรหรือทะเบียนเครื่องจริง"
+  "note": "ข้อมูลสมมติทั้งหมด ครอบคลุม IT 8 หมวดและครุภัณฑ์สำนักงาน 5 หมวด ช่อง IT ปรับจาก template ต้นทาง ส่วนช่องสำนักงานเพิ่มเติมให้เหมาะกับประเภททรัพย์สิน",
+  "itCategoryCount": 8,
+  "officeCategoryCount": 5
 }

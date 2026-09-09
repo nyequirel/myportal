@@ -1,4 +1,4 @@
-ระบบครุภัณฑ์คอมพิวเตอร์ - Portfolio demonstration
+ระบบทรัพย์สินทร์ - Portfolio demonstration
 
 Derived from the owner's Laravel 11 application. The Bootstrap 5 navigation
 layout and original default-config.css are adapted for static hosting. Table
@@ -6,9 +6,13 @@ columns and form fields for all eight equipment categories were extracted
 from the original Blade views. The browser interactions and reports were
 implemented for this demonstration.
 
-All 80 initial records are synthetic, with ten per equipment category. Names,
+All 130 initial records are synthetic, with ten per equipment category. Names,
 asset numbers, phone extensions, IP/MAC addresses and equipment assignments
-are examples. No original personnel records, device inventory, credentials,
+are examples. The eight original IT categories are supplemented with office
+desks, chairs, filing cabinets, air conditioners and projectors. Office fields
+include materials, dimensions, prices, locations, warranty and category-specific
+specifications. These office fields extend the original IT-only template.
+No original personnel records, device inventory, credentials,
 environment files, database, application logs or directory authentication
 configuration are included. Organizational logos and branding are omitted.
 

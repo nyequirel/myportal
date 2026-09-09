@@ -50,7 +50,7 @@ try{
  if(page==='inventory'){
   initFilters();let currentPage=1,editingId=null;
   const modal=new bootstrap.Modal($('assetModal'));
-  const commonColumns=[{key:'id',label:'#'},{key:'asset_number',label:'เลขครุภัณฑ์'},{key:'actions',label:'จัดการ'},{key:'type',label:'ประเภท'},{key:'year',label:'ปี'},{key:'pc_brand',label:'ยี่ห้อ'},{key:'pc_model',label:'รุ่น'},{key:'status',label:'สถานะ'},{key:'division_id',label:'หน่วยงาน'},{key:'division_sub_id',label:'ส่วน/ฝ่าย'},{key:'pc_user',label:'ผู้ใช้งาน'}];
+  const commonColumns=[{key:'id',label:'#'},{key:'asset_number',label:'เลขครุภัณฑ์'},{key:'actions',label:'จัดการ'},{key:'type',label:'ประเภท'},{key:'asset_name',label:'ชื่อทรัพย์สิน'},{key:'year',label:'ปี'},{key:'pc_brand',label:'ยี่ห้อ'},{key:'pc_model',label:'รุ่น'},{key:'status',label:'สถานะ'},{key:'division_id',label:'หน่วยงาน'},{key:'division_sub_id',label:'ส่วน/ฝ่าย'},{key:'pc_user',label:'ผู้รับผิดชอบ'}];
   function render(){
    const rows=filtered(),sort=$('sort').value;
    rows.sort((a,b)=>sort==='asset'?a.asset_number.localeCompare(b.asset_number,'th'):sort==='division'?a.division_id.localeCompare(b.division_id,'th')||b.year-a.year:sort==='year_asc'?a.year-b.year:b.year-a.year);
@@ -58,21 +58,21 @@ try{
    const type=schema.find(t=>t.id===$('typeFilter').value),columns=type?.columns||commonColumns;
    $('inventoryTitle').textContent=type?`ทะเบียน${type.name}`:'ทะเบียนครุภัณฑ์ทุกประเภท';
    document.querySelector('#da-table thead').innerHTML=`<tr>${columns.map(c=>`<th>${esc(c.label)}</th>`).join('')}</tr>`;
-   $('output').innerHTML=rows.slice((currentPage-1)*size,currentPage*size).map((r,i)=>`<tr>${columns.map(c=>`<td>${c.key==='id'?(currentPage-1)*size+i+1:c.key==='actions'?`<button class="btn btn-outline-primary btn-sm" data-edit="${esc(r.id)}">รายละเอียด / แก้ไข</button>`:c.key==='status'?badge(r.status):c.key==='type'?esc(typeOf(r).name):c.key==='asset_number'?`${esc(r.asset_number)}<div class="mt-1">${badge(r.status)}</div>`:esc(r[c.key]||'—')}</td>`).join('')}</tr>`).join('')||`<tr><td colspan="${columns.length}" class="text-center py-4">ไม่พบครุภัณฑ์ตามเงื่อนไข</td></tr>`;
+   $('output').innerHTML=rows.slice((currentPage-1)*size,currentPage*size).map((r,i)=>`<tr>${columns.map(c=>`<td>${c.key==='id'?(currentPage-1)*size+i+1:c.key==='actions'?`<button class="btn btn-outline-primary btn-sm" data-edit="${esc(r.id)}">รายละเอียด / แก้ไข</button>`:c.key==='status'?badge(r.status):c.key==='type'?esc(typeOf(r).name):c.key==='asset_name'?esc(r.asset_name||r.pc_name||r.software_name||r.pc_model||typeOf(r).name):c.key==='asset_number'?`${esc(r.asset_number)}<div class="mt-1">${badge(r.status)}</div>`:esc(r[c.key]??'—')}</td>`).join('')}</tr>`).join('')||`<tr><td colspan="${columns.length}" class="text-center py-4">ไม่พบครุภัณฑ์ตามเงื่อนไข</td></tr>`;
    $('tableSummary').textContent=`${rows.length} รายการ · หน้า ${currentPage} / ${pages} · รวมทั้งหมด ${state.assets.length}`;
    $('previousPage').disabled=currentPage===1;$('nextPage').disabled=currentPage===pages;
   }
   function fields(typeId,row){
    const type=schema.find(t=>t.id===typeId);
-   $('formType').textContent=`${type.name} · ช่องข้อมูลจาก template เดิม`;
+   $('formType').textContent=`${type.name} · ${type.group==='office'?'รายละเอียดเฉพาะครุภัณฑ์สำนักงาน':'ช่องข้อมูลจาก template เดิม'}`;
    const typeSelector=`<div class="col-12"><label class="form-label" for="edit-type">ประเภทครุภัณฑ์</label><select id="edit-type" class="form-select" ${row?'disabled':''}>${schema.map(t=>`<option value="${t.id}" ${t.id===typeId?'selected':''}>${esc(t.name)}</option>`).join('')}</select></div>`;
    $('assetFields').innerHTML=typeSelector+type.fields.map(f=>{
     const value=row?.[f.key]??(f.key==='year'?manifest.referenceYear:f.key==='status'?'normal':''),required=['asset_number','year','division_id'].includes(f.key)?'required':'';
-    const numeric=['year','ram_gb','storage_gb','rated_capacity_va','rated_capacity_watt'].includes(f.key);
+    const numeric=f.input==='number'||['year','ram_gb','storage_gb','rated_capacity_va','rated_capacity_watt'].includes(f.key);
     let control;
     if(f.key==='status')control=`<select class="form-select" id="edit-${f.key}" name="${f.key}">${Object.entries(labels).map(([id,label])=>`<option value="${id}" ${value===id?'selected':''}>${label}</option>`).join('')}</select>`;
     else if(f.key==='note_description')control=`<textarea class="form-control" id="edit-${f.key}" name="${f.key}" rows="3" maxlength="2000">${esc(value)}</textarea>`;
-    else control=`<input class="form-control" id="edit-${f.key}" name="${f.key}" type="${numeric?'number':'text'}" ${numeric?`min="${f.key==='year'?2400:0}" max="${f.key==='year'?manifest.referenceYear:100000}" step="1"`:'maxlength="250"'} value="${esc(value)}" ${required}>`;
+    else control=`<input class="form-control" id="edit-${f.key}" name="${f.key}" type="${numeric?'number':f.input==='date'?'date':'text'}" ${numeric?`min="${f.key==='year'?2400:0}" max="${f.key==='year'?manifest.referenceYear:100000000}" step="${f.key==='purchase_price'?'0.01':'1'}"`:'maxlength="250"'} value="${esc(value)}" ${required}>`;
     return `<div class="${f.key==='note_description'?'col-12':'col-md-6 col-lg-4'}"><label class="form-label" for="edit-${f.key}">${esc(f.label)} ${required?'<span class="text-danger">*</span>':''}</label>${control}</div>`;
    }).join('');
    $('edit-type').addEventListener('change',()=>fields($('edit-type').value,null));
