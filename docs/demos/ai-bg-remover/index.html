@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>AI Background Remover</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>AI Background Remover</h1>
+    <p id="appSubtitle" data-i18n="subtitle"></p>
+  </div>
+  <div class="header-right">
+    <div class="lang-switch"><button id="langTH" class="lang-btn active">TH</button><button id="langEN" class="lang-btn">EN</button></div>
+    <div class="status-stack">
+      <span id="modelStatus" class="pill warn"></span>
+      <span id="engineStatus" class="pill">Engine: WASM</span>
+      <span id="progressStatus" class="pill">0 / 0</span>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="panel">
+    <h2 data-i18n="sectionModel"></h2>
+    <div class="model-row">
+      <div>
+        <div class="kv"><span>Model</span><strong>ISNet General Q8</strong></div>
+        <div class="kv"><span>Path</span><code>./models/isnet-general-use-q8.onnx</code></div>
+      </div>
+      <div class="actions"><button id="loadModelBtn" class="primary" data-i18n="loadModel"></button><button id="clearModelCacheBtn" data-i18n="clearModelCache"></button></div>
+    </div>
+    <div class="progress"><div id="modelProgressBar"></div></div>
+    <div id="modelMessage" class="hint"></div>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="sectionSource"></h2>
+    <div id="sourceDropZone" class="unified-source" tabindex="0">
+      <div class="source-actions">
+        <button id="pickFolderBtn" class="source-action primary-soft"><span class="source-icon">📁</span><span data-i18n="pickFolder"></span></button>
+        <button id="pickFilesBtn" class="source-action"><span class="source-icon">🖼️</span><span data-i18n="pickFiles"></span></button>
+        <input id="fileInput" type="file" accept=".png,.jpg,.jpeg,.webp,.bmp" multiple hidden />
+      </div>
+      <div class="drop-copy">
+        <strong data-i18n="dropHere"></strong>
+        <span data-i18n="dropSub"></span>
+      </div>
+      <div id="sourceSummary" class="source-summary"></div>
+    </div>
+    <div class="options-grid">
+      <label><input id="includeSubfolders" type="checkbox" checked /><span data-i18n="includeSubfolders"></span></label>
+      <label><input id="preserveStructure" type="checkbox" checked /><span data-i18n="preserveStructure"></span></label>
+      <label><input id="skipExisting" type="checkbox" checked /><span data-i18n="skipExisting"></span></label>
+      <label><input id="exportMask" type="checkbox" /><span data-i18n="exportMask"></span></label>
+    </div>
+    <label class="field"><span data-i18n="outputFolder"></span><input id="outputFolder" value="_bg_removed_done" /></label>
+    <div class="actions wrap"><button id="startBtn" class="primary" disabled data-i18n="startQueue"></button><button id="stopBtn" disabled data-i18n="stop"></button><button id="clearQueueBtn" data-i18n="clearQueue"></button></div>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="sectionRefine"></h2>
+    <div class="controls-grid">
+      <label>Preset<select id="preset"><option value="balanced">Balanced</option><option value="fur" data-i18n="presetFur"></option><option value="glow" data-i18n="presetGlow"></option><option value="hard">Hard Surface</option></select></label>
+      <label>AI Threshold <span id="thresholdVal"></span><input id="threshold" type="range" min="0" max="0.5" value="0.03" step="0.01" /></label>
+      <label>Feather <span id="featherVal"></span><input id="feather" type="range" min="0" max="4" value="1" step="0.5" /></label>
+      <label>Edge Recovery <span id="edgeRecoveryVal"></span><input id="edgeRecovery" type="range" min="0" max="1" value="0.25" step="0.05" /></label>
+      <label>Glow Recovery <span id="glowRecoveryVal"></span><input id="glowRecovery" type="range" min="0" max="1" value="0.3" step="0.05" /></label>
+      <label>Defringe <span id="defringeVal"></span><input id="defringe" type="range" min="0" max="1" value="0.45" step="0.05" /></label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="sectionQueue"></h2>
+    <div class="queue-head"><div id="queueSummary" class="hint"></div><button id="downloadZipBtn" disabled data-i18n="downloadAllZip"></button></div>
+    <div class="table-wrap"><table><thead><tr><th>#</th><th data-i18n="file"></th><th>Folder</th><th>Status</th><th>Output</th><th>Download</th></tr></thead><tbody id="queueBody"></tbody></table></div>
+  </section>
+</main>
+<footer id="appFooter"></footer>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.30.0/dist/ort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

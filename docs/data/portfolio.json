@@ -18,6 +18,28 @@
   },
   "projects": [
     {
+      "id": "ai-bg-remover",
+      "title": "AI Background Remover",
+      "category": "AI application",
+      "description": "เครื่องมือลบพื้นหลังภาพด้วย AI ที่ทำงานในเบราว์เซอร์ รองรับหลายไฟล์และโฟลเดอร์ ปรับแต่งขอบภาพ ดูตัวอย่าง และดาวน์โหลดผลลัพธ์ได้โดยไม่ต้องอัปโหลดภาพไปยังเซิร์ฟเวอร์",
+      "tags": [
+        "AI",
+        "ONNX Runtime",
+        "JavaScript",
+        "WebAssembly"
+      ],
+      "githubUrl": "https://github.com/nyequirel/myportal/tree/main/docs/demos/ai-bg-remover",
+      "demoUrl": "https://nyequirel.github.io/myportal/demos/ai-bg-remover/",
+      "featured": true,
+      "published": true,
+      "sample": false,
+      "color": "mint",
+      "overview": "เว็บแอปสำหรับลบพื้นหลังภาพด้วยโมเดล ISNet General Q8 โดยประมวลผลทั้งหมดบนอุปกรณ์ของผู้ใช้ผ่าน ONNX Runtime Web และ WebAssembly รองรับการเลือกหลายไฟล์ เลือกทั้งโฟลเดอร์ หรือ Drag & Drop ในพื้นที่เดียวกัน",
+      "problem": "การลบพื้นหลังภาพจำนวนมากมักต้องอัปโหลดไฟล์ไปยังบริการภายนอก ทำให้เสียเวลา มีข้อจำกัดด้านจำนวนไฟล์ และอาจไม่เหมาะกับภาพที่ต้องการความเป็นส่วนตัว",
+      "solution": "นำโมเดล AI มารันในเบราว์เซอร์ พร้อมระบบคิวแบบหลายไฟล์ ตัวเลือกเก็บโครงสร้างโฟลเดอร์ การปรับ Threshold, Feather, Edge Recovery, Glow Recovery และ Defringe รวมถึงการส่งออก mask และดาวน์โหลดผลลัพธ์รวมเป็น ZIP",
+      "outcome": "ผู้ใช้สามารถประมวลผลและดาวน์โหลดภาพโปร่งใสได้จากเบราว์เซอร์โดยตรง ข้อมูลภาพไม่ต้องออกจากเครื่อง และเลือกปรับรายละเอียดขอบภาพให้เหมาะกับวัตถุแต่ละประเภทได้"
+    },
+    {
       "id": "computer-assets",
       "title": "ระบบทรัพย์สินทร์",
       "category": "Web application",
