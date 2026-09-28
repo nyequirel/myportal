@@ -6,6 +6,10 @@
   <meta name="theme-color" content="#0f172a" />
   <title>AI Background Remover</title>
   <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .local-download{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid #4f8fdc;border-radius:10px;background:#132a47;color:#dbeafe;text-decoration:none;font-weight:600}
+    .local-download:hover{background:#1b3b63;border-color:#60a5fa}
+  </style>
 </head>
 <body>
 <header class="topbar">
@@ -14,6 +18,10 @@
     <p id="appSubtitle" data-i18n="subtitle"></p>
   </div>
   <div class="header-right">
+    <a class="local-download" href="./ai-bg-remover-local-only.zip" download>
+      <span aria-hidden="true">⬇</span>
+      <span>ดาวน์โหลด Local Only</span>
+    </a>
     <div class="lang-switch"><button id="langTH" class="lang-btn active">TH</button><button id="langEN" class="lang-btn">EN</button></div>
     <div class="status-stack">
       <span id="modelStatus" class="pill warn"></span>
