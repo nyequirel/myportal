@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post-Apocalypse VFX Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Post-Apocalypse VFX Builder</h1>
+      <p>2.5D VFX editor สำหรับเกม 2D แนวโลกหลังล่มสลาย — fire, water, radiation, poison, slime, psychic, blood, bullet impact และอื่น ๆ</p>
+    </div>
+    <div class="top-actions">
+      <button id="playBtn">Pause</button>
+      <button id="restartBtn">Restart</button>
+      <button id="saveProjectBtn">Save Project</button>
+      <button id="loadProjectBtn">Load Project</button>
+      <button id="exportPngBtn">Export PNG</button>
+      <button id="exportSheetBtn" class="primary">Export Sprite Sheet</button>
+      <input id="projectFile" type="file" accept=".json" hidden />
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel controls">
+      <h2>Preset Library</h2>
+      <label>Category
+        <select id="category"></select>
+      </label>
+      <label>Preset
+        <select id="preset"></select>
+      </label>
+      <label>Style Pack
+        <select id="stylePack">
+          <option value="dirty">Dirty</option>
+          <option value="industrial">Industrial</option>
+          <option value="mutant">Mutant / Biohazard</option>
+          <option value="survival">Military / Survival</option>
+          <option value="ruin">Sci-fi Ruin</option>
+        </select>
+      </label>
+
+      <h2>Prompt to Preset</h2>
+      <textarea id="prompt" rows="6">หมอกพิษสีเขียวสกปรก ลอยช้า ๆ มีจุดเรืองแสงเล็กน้อยและบรรยากาศอันตรายแบบ post apocalypse</textarea>
+      <button id="applyIntentBtn">Analyze Prompt & Apply</button>
+
+      <h2>Main Controls</h2>
+      <label>Seed
+        <input id="seed" type="number" value="1337" step="1" />
+      </label>
+      <label>Intensity <span id="intensityVal"></span>
+        <input id="intensity" type="range" min="0.2" max="2.4" step="0.05" value="1" />
+      </label>
+      <label>Particle Count <span id="countVal"></span>
+        <input id="count" type="range" min="8" max="600" value="150" />
+      </label>
+      <label>Lifetime <span id="lifeVal"></span>
+        <input id="life" type="range" min="0.2" max="5" step="0.05" value="1.8" />
+      </label>
+      <label>Speed <span id="speedVal"></span>
+        <input id="speed" type="range" min="5" max="520" value="140" />
+      </label>
+      <label>Spread <span id="spreadVal"></span>
+        <input id="spread" type="range" min="5" max="360" value="160" />
+      </label>
+      <label>Gravity <span id="gravityVal"></span>
+        <input id="gravity" type="range" min="-320" max="520" value="-15" />
+      </label>
+      <label>Z Depth <span id="depthVal"></span>
+        <input id="depth" type="range" min="0" max="600" value="220" />
+      </label>
+      <label>Perspective <span id="perspectiveVal"></span>
+        <input id="perspective" type="range" min="240" max="1500" value="760" />
+      </label>
+      <label>Base Size <span id="sizeVal"></span>
+        <input id="size" type="range" min="2" max="120" value="26" />
+      </label>
+      <label>Glow <span id="glowVal"></span>
+        <input id="glow" type="range" min="0" max="60" value="16" />
+      </label>
+      <label>Turbulence <span id="turbulenceVal"></span>
+        <input id="turbulence" type="range" min="0" max="120" value="18" />
+      </label>
+      <label>Trail <span id="trailVal"></span>
+        <input id="trail" type="range" min="0" max="24" value="6" />
+      </label>
+      <label>Blend
+        <select id="blend">
+          <option value="lighter">Additive</option>
+          <option value="screen">Screen</option>
+          <option value="source-over">Normal</option>
+          <option value="multiply">Multiply</option>
+        </select>
+      </label>
+
+      <h2>Palette</h2>
+      <div class="palette-grid">
+        <label>Primary<input id="color1" type="color" value="#88ff55" /></label>
+        <label>Secondary<input id="color2" type="color" value="#335522" /></label>
+        <label>Accent<input id="color3" type="color" value="#d5ff9d" /></label>
+      </div>
+
+      <h2>Ground / Decal</h2>
+      <label class="toggle-row">
+        <span>Ground Shadow</span>
+        <input id="showGround" type="checkbox" />
+      </label>
+      <label class="toggle-row">
+        <span>Ground Decal / Puddle</span>
+        <input id="showDecal" type="checkbox" />
+      </label>
+      <div class="note">
+        ค่าเริ่มต้นปิดทั้งสองรายการ เพื่อให้ Preview และไฟล์ Export ไม่มีเงาหรือคราบบนพื้น
+      </div>
+
+      <h2>Export</h2>
+      <label>Frame Size
+        <select id="frameSize">
+          <option value="256">256×256</option>
+          <option value="512" selected>512×512</option>
+          <option value="1024">1024×1024</option>
+        </select>
+      </label>
+      <label>FPS
+        <select id="fps">
+          <option>12</option>
+          <option selected>24</option>
+          <option>30</option>
+          <option>60</option>
+        </select>
+      </label>
+      <label>Duration (sec)
+        <input id="duration" type="number" min="0.2" max="6" value="1.8" step="0.1" />
+      </label>
+
+      <div class="note">
+        โครงการนี้ใช้ seed เดียวกันเพื่อสร้าง animation แบบ deterministic เหมาะกับการส่งออก Sprite Sheet ซ้ำ ๆ ได้ผลลัพธ์เดิม
+      </div>
+    </aside>
+
+    <section class="stage-wrap">
+      <div class="stage-toolbar">
+        <span id="status">Playing</span>
+        <span id="badge">Preset ready</span>
+        <span id="time">0.00s</span>
+      </div>
+      <div class="checker">
+        <canvas id="stage" width="720" height="720"></canvas>
+      </div>
+      <input id="timeline" class="timeline" type="range" min="0" max="1.8" value="0" step="0.001" />
+      <div class="legend">
+        <span><b>Layers:</b> Multi-emitter + rings + beams + trails + optional ground/decal</span>
+      </div>
+    </section>
+
+    <aside class="panel inspector">
+      <h2>Preset Info</h2>
+      <div id="presetInfo" class="info-card"></div>
+
+      <h2>System Overview</h2>
+      <div class="diagram">
+        <div>Preset / Prompt</div><div>↓</div><div>Emitter Layers</div><div>↓</div><div>2.5D Projection</div><div>↓</div><div>Sprite Sheet Export</div>
+      </div>
+
+      <h2>Recommended Packs</h2>
+      <ul>
+        <li>Fire / Oil Fire / Burning Barrel</li>
+        <li>Dirty Water / Toxic Water / Pipe Leak</li>
+        <li>Electric Arc / EMP / Reactor Sparks</li>
+        <li>Radiation Mist / Poison Cloud / Acid Splash</li>
+        <li>Slime Drip / Mutant Goo / Biohazard Burst</li>
+        <li>Psychic Pulse / Psionic Distortion</li>
+        <li>Bullet Impact Flesh / Metal / Concrete</li>
+        <li>Blood Spray / Bleeding Trail / Explosion Dust</li>
+      </ul>
+
+      <h2>Roadmap</h2>
+      <ol>
+        <li>Import custom textures</li>
+        <li>Curve editor (size/alpha/color over lifetime)</li>
+        <li>True beam & ribbon editors</li>
+        <li>Unity / Godot export format</li>
+        <li>AI texture generation pipeline</li>
+      </ol>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

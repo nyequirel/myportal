@@ -18,6 +18,50 @@
   },
   "projects": [
     {
+      "id": "post-apocalypse-sfx-builder",
+      "title": "Post-Apocalypse SFX Builder",
+      "category": "Game development tools",
+      "description": "เครื่องมือสร้างเสียงประกอบเกมแบบ procedural บนเบราว์เซอร์ มีคลังเสียงกว่า 90 presets ครอบคลุมอาวุธ ระเบิด เครื่องจักร บรรยากาศ และเอฟเฟกต์ไซไฟ พร้อมส่งออก WAV",
+      "tags": [
+        "Web Audio",
+        "Procedural audio",
+        "JavaScript",
+        "Game development"
+      ],
+      "githubUrl": "https://github.com/nyequirel/myportal/tree/main/docs/demos/post-apocalypse-sfx-builder",
+      "demoUrl": "https://nyequirel.github.io/myportal/demos/post-apocalypse-sfx-builder/",
+      "featured": true,
+      "published": true,
+      "sample": false,
+      "color": "peach",
+      "overview": "เครื่องมือออกแบบเสียงสำหรับเกมแนวหลังวันสิ้นโลกที่สังเคราะห์เสียงทั้งหมดในเบราว์เซอร์ รองรับ 11 หมวดและกว่า 90 presets ปรับแต่งองค์ประกอบเสียงและ DSP ได้ละเอียด พร้อม deterministic seed เพื่อสร้างผลลัพธ์เดิมซ้ำได้",
+      "problem": "การเตรียมเสียงจำนวนมากสำหรับเกมต้องใช้ทั้งไฟล์ตัวอย่าง ซอฟต์แวร์เฉพาะทาง และเวลาในการสร้าง variation โดยเฉพาะเมื่อต้องการเสียงที่เข้ากับบรรยากาศหลังวันสิ้นโลก",
+      "solution": "พัฒนา procedural audio engine ด้วย Web Audio API มีชั้นเสียงเฉพาะสำหรับอาวุธ การกระแทก ระเบิด เครื่องจักร และ ambience พร้อม Prompt to Preset ภาษาไทย/อังกฤษ การปรับ pitch, transient, texture, filters, distortion, echo และ stereo width",
+      "outcome": "สามารถพรีวิวเสียงแบบ waveform และ loop บันทึกโครงการเป็น JSON และส่งออก WAV แบบ mono/stereo ที่ 22.05, 44.1 หรือ 48 kHz ได้โดยไม่ต้องใช้ backend"
+    },
+    {
+      "id": "post-apocalypse-vfx-builder",
+      "title": "Post-Apocalypse VFX Builder",
+      "category": "Game development tools",
+      "description": "เครื่องมือสร้างเอฟเฟกต์ภาพสำหรับเกมแนวหลังวันสิ้นโลก มี preset สำหรับไฟ ควัน ไฟฟ้า รังสี พิษ เลือด ระเบิด และเอฟเฟกต์อื่น ๆ พร้อมส่งออก PNG และ Sprite Sheet",
+      "tags": [
+        "Canvas",
+        "Particle effects",
+        "JavaScript",
+        "Game development"
+      ],
+      "githubUrl": "https://github.com/nyequirel/myportal/tree/main/docs/demos/post-apocalypse-vfx-builder",
+      "demoUrl": "https://nyequirel.github.io/myportal/demos/post-apocalypse-vfx-builder/",
+      "featured": true,
+      "published": true,
+      "sample": false,
+      "color": "lavender",
+      "overview": "เครื่องมือออกแบบ VFX แบบ procedural บน HTML Canvas สำหรับทดลองและปรับแต่งเอฟเฟกต์เกมอย่างรวดเร็ว มีคลัง preset ครอบคลุมไฟ น้ำ ไฟฟ้า น้ำแข็ง รังสี พิษ กรด เมือก พลังจิต การกระแทก เลือด ระเบิด และควัน",
+      "problem": "การสร้างเอฟเฟกต์หลายเฟรมสำหรับเกมต้องทดลองค่าของอนุภาค สี การเคลื่อนไหว และจังหวะซ้ำหลายครั้ง ก่อนนำไปจัดทำเป็น sprite sheet ที่พร้อมใช้",
+      "solution": "รวมระบบพรีวิวอนุภาคและตัวควบคุมไว้ในเบราว์เซอร์ พร้อม preset และ style packs, Prompt to Preset ภาษาไทย/อังกฤษ, timeline, ground shadow และการกำหนดขนาดเฟรมกับจำนวนเฟรมสำหรับส่งออก",
+      "outcome": "ผู้ใช้สามารถออกแบบเอฟเฟกต์ บันทึกและโหลดโครงการ JSON รวมทั้งส่งออกภาพ PNG หรือ Sprite Sheet พร้อม metadata เพื่อนำไปใช้ต่อใน game engine ได้"
+    },
+    {
       "id": "ai-bg-remover",
       "title": "AI Background Remover",
       "category": "AI application",

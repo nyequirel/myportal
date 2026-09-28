@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post-Apocalypse SFX Builder v1.5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Post-Apocalypse SFX Builder <small>v1.5</small></h1>
+      <p>Modern procedural / hybrid-ready sound-effect editor สำหรับเกม 2D/2.5D — weapons, fire, electricity, radiation, biohazard, psychic, impacts, explosions, machinery, ambience และ UI</p>
+    </div>
+    <div class="top-actions">
+      <button id="playBtn" class="primary">Play</button>
+      <button id="stopBtn">Stop</button>
+      <button id="randomizeBtn">Randomize</button>
+      <button id="saveProjectBtn">Save Project</button>
+      <button id="loadProjectBtn">Load Project</button>
+      <button id="exportWavBtn" class="primary">Export WAV</button>
+      <input id="projectFile" type="file" accept=".json" hidden />
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel controls">
+      <h2>Preset Library</h2>
+      <label>Category<select id="category"></select></label>
+      <label>Preset<select id="preset"></select></label>
+      <label>Style Pack
+        <select id="stylePack">
+          <option value="dirty">Dirty / Rusty</option>
+          <option value="industrial">Industrial</option>
+          <option value="mutant">Mutant / Biohazard</option>
+          <option value="survival">Military / Survival</option>
+          <option value="ruin">Sci-fi Ruin</option>
+        </select>
+      </label>
+
+      <h2>Prompt to Preset</h2>
+      <textarea id="prompt" rows="6">เสียงปืนพลังงานเก่า ๆ ในโลกหลังล่มสลาย มีไฟฟ้าแตกพร่า ปลายเสียงก้องสั้น และไม่สะอาดเกินไป</textarea>
+      <button id="applyIntentBtn">Analyze Prompt & Apply</button>
+
+      <h2>Main Controls</h2>
+      <label>Seed<input id="seed" type="number" value="1337" step="1" /></label>
+      <label>Duration <span id="durationVal"></span><input id="duration" type="range" min="0.08" max="8" step="0.01" value="1.2" /></label>
+      <label>Intensity <span id="intensityVal"></span><input id="intensity" type="range" min="0.1" max="2" step="0.01" value="1" /></label>
+      <label>Pitch <span id="pitchVal"></span><input id="pitch" type="range" min="0.35" max="2.5" step="0.01" value="1" /></label>
+      <label>Pitch Variation <span id="pitchVarVal"></span><input id="pitchVar" type="range" min="0" max="1" step="0.01" value="0.15" /></label>
+      <label title="ปรับระดับเฉพาะ layer ที่เป็น noise จริง เช่น fire, wind, hiss, crackle และ static โดยไม่เติมเสียงซ่าให้ทุก layer">Noise Layer <span id="noiseVal"></span><input id="noise" type="range" min="0" max="1.5" step="0.01" value="0.25" /></label>
+      <label>Transient <span id="transientVal"></span><input id="transient" type="range" min="0" max="1.5" step="0.01" value="0.7" /></label>
+      <label>Body <span id="bodyVal"></span><input id="body" type="range" min="0" max="1.5" step="0.01" value="0.8" /></label>
+      <label>Texture <span id="textureVal"></span><input id="texture" type="range" min="0" max="1.5" step="0.01" value="0.35" /></label>
+      <label>Attack <span id="attackVal"></span><input id="attack" type="range" min="0" max="1.5" step="0.005" value="0.005" /></label>
+      <label>Release <span id="releaseVal"></span><input id="release" type="range" min="0.01" max="4" step="0.01" value="0.35" /></label>
+
+      <h2>Color / DSP</h2>
+      <label>Low-pass <span id="lowpassVal"></span><input id="lowpass" type="range" min="500" max="20000" step="10" value="15000" /></label>
+      <label>High-pass <span id="highpassVal"></span><input id="highpass" type="range" min="0" max="3000" step="5" value="20" /></label>
+      <label>Distortion <span id="distortionVal"></span><input id="distortion" type="range" min="0" max="1" step="0.01" value="0.15" /></label>
+      <label>Bit Crush <span id="bitcrushVal"></span><input id="bitcrush" type="range" min="0" max="1" step="0.01" value="0" /></label>
+      <label>Space / Echo <span id="spaceVal"></span><input id="space" type="range" min="0" max="1" step="0.01" value="0.2" /></label>
+      <label>Stereo Width <span id="stereoVal"></span><input id="stereo" type="range" min="0" max="1" step="0.01" value="0.35" /></label>
+
+      <h2>Playback / Export</h2>
+      <label class="toggle-row"><span>Loop Preview</span><input id="loopPreview" type="checkbox" /></label>
+      <label>Sample Rate
+        <select id="sampleRate"><option value="22050">22050 Hz</option><option value="44100">44100 Hz</option><option value="48000" selected>48000 Hz</option></select>
+      </label>
+      <label>Export Format
+        <select id="channels"><option value="2" selected>Stereo WAV</option><option value="1">Mono WAV</option></select>
+      </label>
+      <div class="note">เสียงถูกสร้างจาก seed + preset + controls แบบ deterministic การ export ซ้ำด้วยค่าเดิมจะได้ waveform เดิม</div>
+    </aside>
+
+    <section class="stage-wrap">
+      <div class="stage-toolbar">
+        <span id="status">Ready</span><span id="badge">Preset ready</span><span id="time">0.00s</span>
+      </div>
+      <div class="audio-stage">
+        <canvas id="waveform" width="960" height="520"></canvas>
+        <div class="meter"><div id="meterFill"></div></div>
+      </div>
+      <input id="timeline" class="timeline" type="range" min="0" max="1.2" value="0" step="0.001" />
+      <div class="legend"><span><b>Preview:</b> waveform + layer energy</span><span id="peakInfo">Peak 0.00</span></div>
+    </section>
+
+    <aside class="panel inspector">
+      <h2>Preset Info</h2><div id="presetInfo" class="info-card"></div>
+      <h2>Layer Stack</h2><div id="layerInfo" class="info-card"></div>
+      <h2>System Overview</h2>
+      <div class="diagram"><div>Preset / Prompt</div><div>↓</div><div>Procedural Layers</div><div>↓</div><div>Filter / Distortion / Space</div><div>↓</div><div>WAV Export</div></div>
+      <h2>Recommended Packs</h2>
+      <ul>
+        <li>Firearms / Energy Weapons / Flamethrower</li><li>Fire / Sparks / Electrical Arc / EMP</li><li>Radiation / Toxic / Acid / Mutant Bio</li><li>Psychic / Psionic / Anomaly</li><li>Flesh / Metal / Concrete / Armor Impacts</li><li>Explosion / Debris / Shockwave</li><li>Generator / Reactor / Drone / Servo</li><li>Wind / Ruins / Bunker / Geiger ambience</li>
+      </ul>
+      <h2>Design Note</h2><div class="note">เหมาะกับ prototype และ game-ready procedural one-shots/loops เบื้องต้น ถ้าต้องการเสียงระดับ cinematic ควรใช้ Builder นี้สร้าง layer แล้วนำไป mix/master ต่อใน DAW</div>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
